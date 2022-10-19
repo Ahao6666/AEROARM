@@ -153,8 +153,6 @@ namespace gazebo
 			// Spin up the queue helper thread.
 			this->rosQueueThread =
   			std::thread(std::bind(&GripperROSPlugin1::QueueThread, this));
-			std::cerr << "\nCode finished\n";
-
   			this->model->GetJointController()->SetPositionTarget(
       			this->joint->GetScopedName(), 0);
 
