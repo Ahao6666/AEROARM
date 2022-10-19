@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="中合金带齿爪.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0054 -0.0034366 0.018368"
+        rpy="0 0 0" />
+      <mass
+        value="0.047774" />
+      <inertia
+        ixx="7.9121E-06"
+        ixy="-7.4045E-08"
+        ixz="-4.0881E-07"
+        iyy="6.7162E-06"
+        iyz="-1.004E-07"
+        izz="1.0991E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://中合金带齿爪.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://中合金带齿爪.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Empty_Link1">
+    <inertial>
+      <origin
+        xyz="-0.011973 0.033268 -0.0055832"
+        rpy="0 0 0" />
+      <mass
+        value="0.015801" />
+      <inertia
+        ixx="2.3345E-06"
+        ixy="9.8285E-07"
+        ixz="-1.3309E-16"
+        iyy="8.7372E-07"
+        iyz="1.7672E-17"
+        izz="2.8346E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://中合金带齿爪.SLDASM/meshes/Empty_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://中合金带齿爪.SLDASM/meshes/Empty_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.023 0.014 0.02"
+      rpy="1.5708 0.61188 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Empty_Link2">
+    <inertial>
+      <origin
+        xyz="-0.011229 -0.036805 -0.004777"
+        rpy="0 0 0" />
+      <mass
+        value="0.017262" />
+      <inertia
+        ixx="2.2333E-06"
+        ixy="-1.0426E-06"
+        ixz="5.3592E-17"
+        iyy="9.7817E-07"
+        iyz="-3.3028E-16"
+        izz="2.886E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://中合金带齿爪.SLDASM/meshes/Empty_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://中合金带齿爪.SLDASM/meshes/Empty_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.023 -0.0089345 0.014669"
+      rpy="-1.5708 0.66943 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

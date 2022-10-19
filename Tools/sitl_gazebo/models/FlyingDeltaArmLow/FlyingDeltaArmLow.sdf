@@ -1,0 +1,841 @@
+<sdf version='1.5'>
+  <model name='FlyingDeltaArmLow'>
+
+ <link name='con1'>
+      <pose frame=''>0.1525 -0.000228 -0.346913429511 0.534996 -0 1.57</pose>
+      <inertial>
+        <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>2.093e-6</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.093e-6</iyy>
+          <iyz>0</iyz>
+          <izz>2e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con1_collision'>
+        <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='con1_visual'>
+        <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+
+    <link name='lleg_12'>
+      <pose frame=''>0.1525 0.029772 -0.346913429511 0.534996 -0 1.57</pose>
+      <inertial>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>5.7612e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>5.7612e-5</iyy>
+          <iyz>0</iyz>
+          <izz>2.4e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='lleg_12_collision'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='lleg_12_visual'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+<link name='lleg_1'>
+      <pose frame=''>0.1525 -0.020228 -0.346913429511 0.534996 -0 1.57</pose>
+      <inertial>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>5.7612e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>5.7612e-5</iyy>
+          <iyz>0</iyz>
+          <izz>2.4e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='lleg_1_collision'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='lleg_1_visual'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+
+<link name='lleg_2'>
+      <pose frame=''> -0.093767962 -0.121954874077  -0.346913429511 0.534996 -0 -0.524395</pose>
+      <inertial>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>5.7612e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>5.7612e-5</iyy>
+          <iyz>0</iyz>
+          <izz>2.4e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='lleg_2_collision'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='lleg_2_visual'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+
+
+<link name='lleg_3'>
+      <pose frame=''>-0.05873204 0.1421828741 -0.346913429511 0.534996 -0 -2.61879</pose>
+      <inertial>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>5.7612e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>5.7612e-5</iyy>
+          <iyz>0</iyz>
+          <izz>2.4e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='lleg_3_collision'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='lleg_3_visual'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+    <link name='lleg_22'>
+      <pose frame=''>-0.05046669 -0.146954874 -0.346913429511 0.534996 -0 -0.524395</pose>
+      <inertial>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>5.7612e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>5.7612e-5</iyy>
+          <iyz>0</iyz>
+          <izz>2.4e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='lleg_22_collision'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='lleg_22_visual'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+  <link name='lleg_32'>
+      <pose frame=''>-0.10203331 0.1171828741 -0.346913429511 0.534996 -0 -2.61879</pose>
+      <inertial>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <mass>0.012</mass>
+        <inertia>
+          <ixx>5.7612e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>5.7612e-5</iyy>
+          <iyz>0</iyz>
+          <izz>2.4e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='lleg_32_collision'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='lleg_32_visual'>
+        <pose frame=''>0 0 -0.12 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.24</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+
+    <link name='con13'>
+      <pose frame=''>0.025857 0.029979 -0.558738 0.534996 -0 1.57</pose>
+      <inertial>
+        <pose frame=''>-0.025 0 0 3.14159 1.57079 3.14159</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>2.093e-6</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.093e-6</iyy>
+          <iyz>0</iyz>
+          <izz>2e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con13_collision'>
+        <pose frame=''>-0.025 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='con13_visual'>
+        <pose frame=''>-0.025 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+
+
+    <link name='low_base'>
+      <pose frame=''>0.025857 0.029979 -0.558738 0.034996 0 1.57</pose>
+      <inertial>
+        <pose frame=''>-0.03 0.03 0 0 -0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>2.67e-04</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.67e-04</iyy>
+          <iyz>0</iyz>
+          <izz>2.67e-04</izz>
+        </inertia>
+      </inertial>
+      <visual name='low_base_visual_visual'>
+        <pose frame=''>-0.07 -0.015 -0.012 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://FlyingDelta/meshes/Platform.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='low_base_visual_visual_collision'>
+       <pose frame=''>-0.03 0.03 -0.012 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.02</size>
+          </box>
+        </geometry>
+      </collision>
+      <gravity>1</gravity>
+    </link>
+
+
+
+    <link name='marker'>
+      <pose frame=''>0 0 -0.573 0 0 -0.5236</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 0 0 </pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>2.67e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.67e-05</iyy>
+          <iyz>0</iyz>
+          <izz>2.67e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='m_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Blue</name>
+          </script>
+        </material>
+      </visual>
+      <collision name='m_collision'>
+       <pose frame=''>0 0  0  0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <gravity>0</gravity>
+    </link>
+
+
+
+    <joint name="marker_fixed" type="fixed">
+      <parent>low_base</parent>
+      <child>marker</child>
+    </joint>
+
+
+    <link name='con2'>
+      <pose frame=''>-0.076052546208 -0.132182874077 -0.346913429511 0.534996 -0 -0.524395</pose>
+      <inertial>
+        <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>2.093e-6</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.093e-6</iyy>
+          <iyz>0</iyz>
+          <izz>2e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con2_collision'>
+        <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='con2_visual'>
+        <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>0</gravity>
+    </link>
+
+
+
+
+
+
+    <link name='con23'>
+      <pose frame=''>0.01303407558 -0.037382319 -0.558738 0.534996 -0 -0.524395</pose>
+      <inertial>
+        <pose frame=''>-0.025 0 0 3.14159 1.57079 3.14159</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>2.093e-6</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.093e-6</iyy>
+          <iyz>0</iyz>
+          <izz>2e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con23_collision'>
+        <pose frame=''>-0.025 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='con23_visual'>
+        <pose frame=''>-0.025 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+
+
+
+    <link name='con3'>
+      <pose frame=''>-0.0764474538 0.13195487408 -0.346913429511 0.534996 -0 -2.61879</pose>
+      <inertial>
+        <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>2.093e-6</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.093e-6</iyy>
+          <iyz>0</iyz>
+          <izz>2e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con3_collision'>
+        <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='con3_visual'>
+        <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+
+
+    <link name='con33'>
+      <pose frame=''>-0.0388911 0.007403319 -0.558738 0.534996 -0 -2.61879</pose>
+      <inertial>
+        <pose frame=''>-0.025 0 0 3.14159 1.57079 3.14159</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>2.093e-6</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.093e-6</iyy>
+          <iyz>0</iyz>
+          <izz>2e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con33_collision'>
+        <pose frame=''>-0.025 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='con33_visual'>
+        <pose frame=''>-0.025 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.05</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+    </link>
+
+
+
+    <joint name='con2_lleg_3' type='revolute'>
+      <child>lleg_32</child>
+      <parent>con3</parent>
+      <axis>
+        <xyz>0.429542 -0.745358 0.509838</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <joint name='con33_lleg_3' type='revolute'>
+      <child>con33</child>
+      <parent>lleg_32</parent>
+      <axis>
+        <xyz>0.429542 -0.745358 0.509838</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <joint name='con_lleg_3' type='revolute'>
+      <child>lleg_3</child>
+      <parent>con3</parent>
+      <axis>
+        <xyz>0.429542 -0.745358 0.509838</xyz>
+<!--        <xyz>0 1 0</xyz>-->
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+
+    <joint name='con33_lleg_32' type='revolute'>
+      <child>con33</child>
+      <parent>lleg_3</parent>
+      <pose frame=''>-0.05 0 0 0 -0 0</pose>
+      <axis>
+        <xyz> 0.509838 0.86027 0.000685  </xyz>
+<!--        <xyz>0 1 0</xyz>-->
+        <limit>
+          <lower>-100</lower>
+          <upper>100</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0.0003</friction>
+        </dynamics>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+
+    <joint name='con23_lleg_22' type='revolute'>
+      <child>con23</child>
+      <parent>lleg_2</parent>
+      <pose frame=''>-0.05 0 0 0 -0 0</pose>
+      <axis>
+        <xyz> 0.509838 0.86027 0.000685 </xyz>
+<!--        <xyz>0 1 0</xyz>-->
+        <limit>
+          <lower>-100</lower>
+          <upper>100</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0.0003</friction>
+        </dynamics>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <joint name='con_lleg_2' type='revolute'>
+      <child>lleg_2</child>
+      <parent>con2</parent>
+      <axis>
+        <xyz>0.430728 0.744673 0.509838</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <joint name='con2_lleg_2' type='revolute'>
+      <child>lleg_22</child>
+      <parent>con2</parent>
+      <axis>
+        <xyz>0.430728 0.744673 0.509838</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <joint name='con23_lleg_2' type='revolute'>
+      <child>con23</child>
+      <parent>lleg_22</parent>
+      <axis>
+        <xyz>0.430728 0.744673 0.509838</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+<!--11111111111111-->
+
+
+
+    <joint name='con13_lleg_1' type='revolute'>
+      <child>con13</child>
+      <parent>lleg_12</parent>
+      <axis>
+        <xyz>-0.86027 0.000685 0.509838</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <joint name='con_lleg_1' type='revolute'>
+      <child>lleg_1</child>
+      <parent>con1</parent>
+      <axis>
+        <xyz>-0.86027 0.000685 0.509838</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+        <joint name='con2_lleg_1' type='revolute'>
+      <child>lleg_12</child>
+      <parent>con1</parent>
+      <axis>
+        <xyz>-0.86027 0.000685 0.509838</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <joint name='con13_lleg_12' type='revolute'>
+      <child>con13</child>
+      <parent>lleg_1</parent>
+      <pose frame=''>-0.05 0 0 0 -0 0</pose>
+      <axis>
+        <xyz> 0.509838 0.86027 0.000685 </xyz>
+<!--        <xyz>0 1 0</xyz>-->
+        <limit>
+          <lower>-100</lower>
+          <upper>100</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0.0003</friction>
+        </dynamics>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+
+
+
+
+
+
+
+
+
+
+
+    <joint name='lleg1_base' type='revolute'>
+      <child>low_base</child>
+      <parent>con13</parent>
+      <axis>
+<!--        <xyz>  0.000685 0.509838  0.86027 </xyz>-->
+        <xyz> 0 1 0 </xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+
+    <joint name='lleg2_base' type='revolute'>
+      <child>con23</child>
+      <parent>low_base</parent>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz> 0.86027 -0.509838 0.000685</xyz>
+        <limit>
+          <lower>-100</lower>
+          <upper>100</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+
+        </dynamics>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+
+
+    <joint name='lleg3_base' type='revolute'>
+      <child>con33</child>
+      <parent>low_base</parent>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0.86027 -0.509838 0.000685</xyz>
+        <limit>
+          <lower>-100</lower>
+          <upper>100</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+        </dynamics>
+        <use_parent_model_frame>0</use_parent_model_frame>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <static>0</static>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+
+  </model>
+</sdf>
