@@ -1,5 +1,5 @@
-#ifndef _MANIPULATOR_ROS_PLUGIN_HH_
-#define _MANIPULATOR_ROS_PLUGIN_HH_
+#ifndef _GRIPPER_PLUGIN2_HH_
+#define _GRIPPER_PLUGIN2_HH_
 
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
@@ -100,13 +100,7 @@ namespace gazebo
 
 //  			// Get the first joint. We are making an assumption about the model
 //  			// having one joint that is the rotational joint.
-//  			this->joint = _model->GetJoints()[7];
-//			std::cerr << "\nThe manipulator plugin is attach to model[" <<
-//        		this->joint->GetScopedName() << "]\n";
-//  			this->joint = _model->GetJoints()[6];
-//			std::cerr << "\nThe manipulator plugin is attach to model[" <<
-//        		this->joint->GetScopedName() << "]\n";
-  			this->joint = _model->GetJoints()[15];
+  			this->joint = _model->GetJoints()[13];
 			std::cerr << "\nThe gripper ROS plugin 2 is attach to joint[" <<
         		this->joint->GetName() << "]\n";
 
@@ -134,17 +128,15 @@ namespace gazebo
       				ros::init_options::NoSigintHandler);
 			}
 
-
-
 			// Create our ROS node. This acts in a similar manner to
 			// the Gazebo node
 			this->rosNode.reset(new ros::NodeHandle("gazebo_manipulator_client_gripper_2"));
 			ros::NodeHandle n;
- 			this->posi_pub = n.advertise<std_msgs::Float32>("joint/2/gripper/position_msg", 1000);
+ 			this->posi_pub = n.advertise<std_msgs::Float32>("joint/gripper2/position_msg", 1000);
 			// Create a named topic, and subscribe to it.
 			ros::SubscribeOptions so =
   			ros::SubscribeOptions::create<std_msgs::Float32>(
-      			"/joint/2/gripper/cmd",
+      			"/joint/gripper2/cmd",
       			1,
       			boost::bind(&GripperROSPlugin2::OnRosMsg, this, _1),
       			ros::VoidPtr(), &this->rosQueue);
@@ -153,7 +145,6 @@ namespace gazebo
 			// Spin up the queue helper thread.
 			this->rosQueueThread =
   			std::thread(std::bind(&GripperROSPlugin2::QueueThread, this));
-			std::cerr << "\nCode finished\n";
   			this->model->GetJointController()->SetPositionTarget(
       			this->joint->GetScopedName(), 0);
 
