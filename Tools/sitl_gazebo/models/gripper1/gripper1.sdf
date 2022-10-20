@@ -72,8 +72,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-10</lower>
-          <upper>10</upper>
+          <lower>-0.5</lower>
+          <upper>2</upper>
           <effort>0.1</effort>
           <velocity>1</velocity>
         </limit>
@@ -124,8 +124,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-10</lower>
-          <upper>10</upper>
+          <lower>-2</lower>
+          <upper>0.5</upper>
           <effort>0.1</effort>
           <velocity>1</velocity>
         </limit>
