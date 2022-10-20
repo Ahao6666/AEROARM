@@ -236,5 +236,6 @@
        <plugin name="delta_control1" filename="libdelta_plugin1.so"/>
        <plugin name="delta_control2" filename="libdelta_plugin2.so"/>
        <plugin name="delta_control3" filename="libdelta_plugin3.so"/>
+
   </model>
 </sdf>

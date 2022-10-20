@@ -1,5 +1,5 @@
-#ifndef _MANIPULATOR_ROS_PLUGIN_HH_
-#define _MANIPULATOR_ROS_PLUGIN_HH_
+#ifndef _DELTA_ROS_PlUGIN2_HH_
+#define _DELTA_ROS_PlUGIN2_HH_
 
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
@@ -19,12 +19,12 @@ namespace gazebo
 	{
     		/// \brief Constructor
 		public: DeltaROSPlugin2() {}
-		
+
 		/// \brief Handle an incoming message from ROS
 		/// \param[in] _msg A float value that is used to set the velocity
 		/// of the Manipulator.
 		public: void OnRosMsg(const std_msgs::Float32ConstPtr &_msg)
-		{	
+		{
 //			double posi=_msg->data;
 //  			bool r=this->joint->SetPosition(0,posi,true);
 //			printf("%d \n",r);
@@ -33,9 +33,9 @@ namespace gazebo
 //      			this->posi_pub.publish(msg);
 			this->SSetPosition(_msg->data);
 		}
-		
 
-		
+
+
 		/// Set the joint's target velocity.
 		public: void SSetPosition(const double &_vel)
 		{
@@ -47,7 +47,7 @@ namespace gazebo
  			msg.data =this->joint->Position();
       			this->posi_pub.publish(msg);
 		}
-		
+
 		/// \brief ROS helper function that processes messages
 		private: void QueueThread()
 		{
@@ -57,17 +57,17 @@ namespace gazebo
     				this->rosQueue.callAvailable(ros::WallDuration(timeout));
   			}
 		}
-		
+
 		/// \brief Pointer to the model.
 		private: physics::ModelPtr model;
-		
+
 
 		/// \brief Pointer to the joint.
 		private: physics::JointPtr joint;
 
 		/// \brief A PID controller for the joint.
 		private: common::PID pid;
-		
+
 		/// \brief A node use for ROS transport
 		private: std::unique_ptr<ros::NodeHandle> rosNode;
 
@@ -88,7 +88,7 @@ namespace gazebo
 		public: virtual void Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
 		{
       			// Just output a message for now
-	
+
 //  			if (_model->GetJointCount() == 0)
 //  			{
 //    				std::cerr << "Invalid joint count, Manipulator plugin not loaded\n";
@@ -124,8 +124,8 @@ namespace gazebo
 //      			this->joint->GetScopedName(), 10.0);
 //			std::cerr << "\nThe manipulator plugin is attach to model[" <<
 //        		_model->GetJointCount() << "]\n";
-        		
-        		 
+
+
 			if (!ros::isInitialized())
 			{
   				int argc = 0;
@@ -133,7 +133,7 @@ namespace gazebo
   				ros::init(argc, argv, "gazebo_manipulator_client",
       				ros::init_options::NoSigintHandler);
 			}
-			
+
 
 
 			// Create our ROS node. This acts in a similar manner to
@@ -153,7 +153,7 @@ namespace gazebo
 			// Spin up the queue helper thread.
 			this->rosQueueThread =
   			std::thread(std::bind(&DeltaROSPlugin2::QueueThread, this));
-	
+
     		}
   	};
 
