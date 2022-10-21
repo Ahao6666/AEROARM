@@ -136,11 +136,7 @@ namespace gazebo
 			// Create a named topic, and subscribe to it.
 			ros::SubscribeOptions so =
   			ros::SubscribeOptions::create<std_msgs::Float32>(
-<<<<<<< HEAD
       			"/joint/gripper2/position_cmd",
-=======
-      			"/joint/gripper2/cmd",
->>>>>>> 4ba195c3c7a973c7a7fdbbe15194144736336809
       			1,
       			boost::bind(&GripperROSPlugin2::OnRosMsg, this, _1),
       			ros::VoidPtr(), &this->rosQueue);
