@@ -106,7 +106,7 @@ namespace gazebo
 
 
   			// Setup a P-controller, with a gain of 0.1.
-  			this->pid = common::PID(2,0.1,0.1);
+  			this->pid = common::PID(1,0,0);
 
   			// Apply the P-controller to the joint.
   			this->model->GetJointController()->SetPositionPID(

@@ -102,11 +102,11 @@ namespace gazebo
 //  			// having one joint that is the rotational joint.
   			this->joint = _model->GetJoints()[12];
 			std::cerr << "\nThe gripper ROS plugin 1 is attach to joint[" <<
-        		this->joint->GetName() << "]\n";
+        		this->joint->GetName() << "]\nk";
 
 
   			// Setup a P-controller, with a gain of 0.1.
-  			this->pid = common::PID(2,0.1,0.1);
+  			this->pid = common::PID(1,0,0);
 
   			// Apply the P-controller to the joint.
   			this->model->GetJointController()->SetPositionPID(
