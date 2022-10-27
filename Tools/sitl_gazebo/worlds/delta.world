@@ -277,13 +277,14 @@
       </link>
     </model>
 
+<!--
     <model name='payload box'>
-      <pose frame=''>0.02 -0.02 0.3 0 -0 0.785</pose>
+      <pose frame=''>0.01 -0.01 0.3 0 -0 0.785</pose>
       <static>0</static>
       <link name='link'>
       <inertial>
         <pose frame=''>0 0 0 0 0 0 </pose>
-        <mass>0.03</mass>
+        <mass>0.01</mass>
         <inertia>
           <ixx>2.67e-05</ixx>
           <ixy>0</ixy>
@@ -297,10 +298,9 @@
        <pose frame=''>0 0  0  0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.035 0.035 0.035</size>
+            <size>0.04 0.06 0.03</size>
           </box>
         </geometry>
- <!--###########################-->
           <surface>
             <friction>
               <ode>
@@ -309,13 +309,12 @@
               </ode>
             </friction>
           </surface>
-<!--###########################-->
       </collision>
       <visual name='m_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.035 0.035 0.035</size>
+            <size>0.04 0.06 0.03</size>
           </box>
         </geometry>
         <material>
@@ -328,6 +327,57 @@
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
+      </link>
+    </model>
+-->
+    <model name='payload box'>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <static>0</static>
+      <link name='link'>
+      <inertial>
+        <pose frame=''>0 -0 0 0 1.57 0</pose>
+        <mass>0.033429</mass>
+        <inertia>
+          <ixx>5.1131e-06</ixx>
+          <ixy>1.9383e-11</ixy>
+          <ixz>-6.4853e-11</ixz>
+          <iyy>6.5404e-06</iyy>
+          <iyz>1.5833e-18</iyz>
+          <izz>6.4417e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.9 0.9 1.1</scale>
+            <uri>model://load_1/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+            </friction>
+          </surface>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.9 0.9 1.1</scale>
+            <uri>model://load_1/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Blue</name>
+          </script>
+        </material>
+      </visual>
       </link>
     </model>
 
