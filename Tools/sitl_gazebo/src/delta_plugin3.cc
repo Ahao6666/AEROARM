@@ -106,7 +106,7 @@ namespace gazebo
 			ros::SubscribeOptions so =
   			ros::SubscribeOptions::create<std_msgs::Float32>(
       			"/joint/3/position_cmd",
-      			1,
+      			0.6,
       			boost::bind(&DeltaROSPlugin3::OnRosMsg, this, _1),
       			ros::VoidPtr(), &this->rosQueue);
 			this->rosSub = this->rosNode->subscribe(so);

@@ -37,7 +37,7 @@
       <pose frame=''>0.04 0 0.02 1.5708 0.90665 -0</pose>
       <inertial>
         <pose frame=''>-0.021122 0.028354 -0.005583 0 -0 0</pose>
-        <mass>0.2</mass>
+        <mass>0.1</mass>
         <inertia>
           <ixx>1.1931E-05</ixx>
           <ixy>8.7376E-06</ixy>
@@ -84,7 +84,7 @@
         <limit>
           <lower>-0.5</lower>
           <upper>2</upper>
-          <effort>1</effort>
+          <effort>0.5</effort>
           <velocity>0.1</velocity>
         </limit>
         <dynamics>
@@ -100,7 +100,7 @@
       <pose frame=''>0.012 0 0.0195 -1.5708 0.96069 3.14159</pose>
       <inertial>
         <pose frame=''>-0.019265 -0.025888 -0.004777 0 -0 0</pose>
-        <mass>0.2</mass>
+        <mass>0.1</mass>
         <inertia>
           <ixx>1.6519e-06</ixx>
           <ixy>-1.216e-06</ixy>
@@ -147,7 +147,7 @@
         <limit>
           <lower>-0.5</lower>
           <upper>2</upper>
-          <effort>1</effort>
+          <effort>0.5</effort>
           <velocity>0.1</velocity>
         </limit>
         <dynamics>

@@ -132,7 +132,7 @@ namespace gazebo
 			// the Gazebo node
 			this->rosNode.reset(new ros::NodeHandle("gazebo_manipulator_client_gripper_2"));
 			ros::NodeHandle n;
- 			this->posi_pub = n.advertise<std_msgs::Float32>("joint/gripper2/position_msg", 1000);
+ 			this->posi_pub = n.advertise<std_msgs::Float32>("joint/gripper2/position_msg", 10);
 			// Create a named topic, and subscribe to it.
 			ros::SubscribeOptions so =
   			ros::SubscribeOptions::create<std_msgs::Float32>(
