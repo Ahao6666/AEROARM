@@ -1,5 +1,5 @@
-#ifndef _MANIPULATOR_ROS_PLUGIN_HH_
-#define _MANIPULATOR_ROS_PLUGIN_HH_
+#ifndef _GRIPPER_PLUGIN1_HH_
+#define _GRIPPER_PLUGIN1_HH_
 
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
