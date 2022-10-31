@@ -159,7 +159,7 @@
         <use_parent_model_frame>0</use_parent_model_frame>
       </axis>
     </joint>
-  <plugin name="gripper_control1" filename="libgripper_plugin1.so"/>
-  <plugin name="gripper_control2" filename="libgripper_plugin2.so"/>
+  <plugin name="gripper_control3_1" filename="libgripper_plugin3_1.so"/>
+  <plugin name="gripper_control3_2" filename="libgripper_plugin3_2.so"/>
   </model>
 </sdf>

@@ -1,5 +1,5 @@
-#ifndef _GRIPPER_PLUGIN2_HH_
-#define _GRIPPER_PLUGIN2_HH_
+#ifndef _GRIPPER_PLUGIN3_2_HH_
+#define _GRIPPER_PLUGIN3_2_HH_
 
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
