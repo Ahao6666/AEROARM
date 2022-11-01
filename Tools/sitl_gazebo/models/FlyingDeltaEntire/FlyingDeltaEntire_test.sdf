@@ -1,5 +1,5 @@
 <sdf version='1.5'>
-  <model name='FlyingDeltaEntire'>
+  <model name='FlyingDeltaEntire_test'>
     <include>
       <uri>model://FlyingDelta</uri>
       <pose>0 0 1.60 0 0 0</pose>
@@ -21,7 +21,7 @@
       <child>velodyne_VLP_16::velodyne</child>
     </joint>
     <include>
-      <uri>model://FlyingDeltaArmLow_test</uri>
+      <uri>model://FlyingDeltaArmLow_test</uri><!-- there are other "FlyingDeltaArmLow_test" need to be changed-->
       <pose>0 0 1.7265 0 0 0.5236</pose>
     </include>
     <include>
@@ -50,7 +50,7 @@
       <parent>FlyingDeltaArmBase::link_0</parent>
     </joint>
     <joint name='uleg1_con' type='revolute'>
-      <child>FlyingDeltaArmLow::con1</child>
+      <child>FlyingDeltaArmLow_test::con1</child>
       <parent>FlyingDeltaArmBase::uleg_3</parent>
       <axis>
         <xyz>-0.5 0.8660254 0</xyz>
@@ -68,7 +68,7 @@
       </axis>
     </joint>
    <joint name='uleg2_con' type='revolute'>
-      <child>FlyingDeltaArmLow::con2</child>
+      <child>FlyingDeltaArmLow_test::con2</child>
       <parent>FlyingDeltaArmBase::uleg_1</parent>
       <axis>
         <xyz>1 0 0</xyz>
@@ -86,7 +86,7 @@
       </axis>
     </joint>
    <joint name='uleg3_con' type='revolute'>
-      <child>FlyingDeltaArmLow::con3</child>
+      <child>FlyingDeltaArmLow_test::con3</child>
       <parent>FlyingDeltaArmBase::uleg_2</parent>
       <axis>
         <xyz>0.5 0.8660254 0</xyz>
@@ -106,7 +106,7 @@
    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
     <alwaysOn>true</alwaysOn>
     <updateRate>100.0</updateRate>
-    <bodyName>FlyingDeltaArmLow::low_base</bodyName>
+    <bodyName>FlyingDeltaArmLow_test::low_base</bodyName>
     <topicName>ground_truth/relative_pos</topicName>
     <gaussianNoise>0.00</gaussianNoise>
     <frameName>FlyingDelta::base_link</frameName>
@@ -116,7 +116,7 @@
   <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
     <alwaysOn>true</alwaysOn>
     <updateRate>100.0</updateRate>
-    <bodyName>FlyingDeltaArmLow::low_base</bodyName>
+    <bodyName>FlyingDeltaArmLow_test::low_base</bodyName>
     <topicName>ground_truth/position_end_effc</topicName>
     <gaussianNoise>0.00</gaussianNoise>
     <frameName>world</frameName>

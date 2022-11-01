@@ -1,17 +1,17 @@
 <sdf version='1.6'>
-  <model name='gripper1'>
+  <model name='gripper2'>
     <link name='base_link'>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose frame=''>0.052462 0.022394 -0.00073 0 -0 0</pose>
-        <mass>0.18394</mass>
+        <pose frame=''>-0.008431 -0.002651 -0.000156 0 -0 0</pose>
+        <mass>0.11581</mass>
         <inertia>
-          <ixx>4.1618e-05</ixx>
-          <ixy>3.2826e-07</ixy>
-          <ixz>2.6891e-08</ixz>
-          <iyy>0.00011213</iyy>
-          <iyz>-6.7446e-07</iyz>
-          <izz>0.00014361</izz>
+          <ixx>5.4342e-05</ixx>
+          <ixy>-3.727e-07</ixy>
+          <ixz>-2.0098e-07</ixz>
+          <iyy>2.8746e-05</iyy>
+          <iyz>-6.0295e-07</iyz>
+          <izz>3.713e-05</izz>
         </inertia>
       </inertial>
       <collision name='base_link_collision'>
@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gripper1/meshes/base_link.STL</uri>
+            <uri>model://gripper2/meshes/base_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -28,54 +28,54 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gripper1/meshes/base_link.STL</uri>
+            <uri>model://gripper2/meshes/base_link.STL</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <link name='left_slider'>
-      <pose frame=''>0 0 0 1.5708 -0 0</pose>
+    <link name='left_link'>
+      <pose frame=''>-0.0135 0.024 -0.014 0 -0 0</pose>
       <inertial>
-        <pose frame=''>0.03422 -0.009313 0.001918 0 -0 0</pose>
-        <mass>0.19697</mass>
+        <pose frame=''>-0.046709 -0.027439 -0.029147 0 -0 0</pose>
+        <mass>0.030645</mass>
         <inertia>
-          <ixx>5.6663e-05</ixx>
-          <ixy>1.6094e-20</ixy>
-          <ixz>6.3527e-22</ixz>
-          <iyy>2.3404e-05</iyy>
-          <iyz>-6.7051e-06</iyz>
-          <izz>5.7287e-05</izz>
+          <ixx>2.9028e-06</ixx>
+          <ixy>8.3629e-12</ixy>
+          <ixz>-3.3228e-06</ixz>
+          <iyy>9.4277e-06</iyy>
+          <iyz>-3.8595e-12</iyz>
+          <izz>7.9093e-06</izz>
         </inertia>
       </inertial>
-      <collision name='left_slider_collision'>
+      <collision name='left_link_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gripper1/meshes/left_slider.STL</uri>
+            <uri>model://gripper2/meshes/left_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
-      <visual name='left_slider_visual'>
+      <visual name='left_link_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gripper1/meshes/left_slider.STL</uri>
+            <uri>model://gripper2/meshes/left_link.STL</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name='left_slider_joint' type='prismatic'>
-      <child>left_slider</child>
+    <joint name='left_joint' type='revolute'>
+      <child>left_link</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>-1 0 0</xyz>
+        <xyz>0 1 0</xyz>
         <limit>
           <lower>0</lower>
-          <upper>1</upper>
-          <effort>500</effort>
-          <velocity>0.5</velocity>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -84,49 +84,49 @@
         <use_parent_model_frame>0</use_parent_model_frame>
       </axis>
     </joint>
-    <link name='right_slider'>
-      <pose frame=''>0.104 0 0 1.5708 -0 0</pose>
+    <link name='right_link'>
+      <pose frame=''>-0.0135 0.024 0.01 0 -0 0</pose>
       <inertial>
-        <pose frame=''>-0.028787 -0.009269 0.00193 0 -0 0</pose>
-        <mass>0.098607</mass>
+        <pose frame=''>-0.046301 -0.029247 0.021379 0 -0 0</pose>
+        <mass>0.03309</mass>
         <inertia>
-          <ixx>2.8497e-05</ixx>
-          <ixy>-4.6686e-06</ixy>
-          <ixz>-4.0714e-07</ixz>
-          <iyy>1.1715e-05</iyy>
-          <iyz>-3.3961e-06</iyz>
-          <izz>2.8797e-05</izz>
+          <ixx>2.1863e-06</ixx>
+          <ixy>-1.0959e-11</ixy>
+          <ixz>2.5315e-06</ixz>
+          <iyy>9.3261e-06</iyy>
+          <iyz>-2.3809e-12</iyz>
+          <izz>8.531e-06</izz>
         </inertia>
       </inertial>
-      <collision name='right_slider_collision'>
+      <collision name='right_link_collision'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gripper1/meshes/right_slider.STL</uri>
+            <uri>model://gripper2/meshes/right_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
-      <visual name='right_slider_visual'>
+      <visual name='right_link_visual'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://gripper1/meshes/right_slider.STL</uri>
+            <uri>model://gripper2/meshes/right_link.STL</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    <joint name='right_slider_joint' type='prismatic'>
-      <child>right_slider</child>
+    <joint name='right_joint' type='revolute'>
+      <child>right_link</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>-1 0 0</xyz>
+        <xyz>0 -1 0</xyz>
         <limit>
-          <lower>0</lower>
-          <upper>1</upper>
-          <effort>500</effort>
-          <velocity>0.5</velocity>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>10</effort>
+          <velocity>1</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>

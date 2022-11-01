@@ -432,20 +432,21 @@ target_link_libraries(gazebo_opticalflow_plugin ${OpticalFlow_LIBS})
   message(STATUS "adding delta_plugin1 to build")
 
 
-
-
   add_library(delta_plugin2 SHARED src/delta_plugin2.cc)
   target_link_libraries(delta_plugin2  ${GAZEBO_libraries} ${roscpp_LIBRARIES})
   list(APPEND plugins delta_plugin2)
   message(STATUS "adding delta_plugin2 to build")
 
 
-
-
   add_library(delta_plugin3 SHARED src/delta_plugin3.cc)
   target_link_libraries(delta_plugin3  ${GAZEBO_libraries} ${roscpp_LIBRARIES})
   list(APPEND plugins delta_plugin3)
   message(STATUS "adding delta_plugin3 to build")
+
+  add_library(gripper_plugin1 SHARED src/gripper_plugin1.cc)
+  target_link_libraries(gripper_plugin1  ${GAZEBO_libraries} ${roscpp_LIBRARIES})
+  list(APPEND plugins gripper_plugin1)
+  message(STATUS "adding gripper_plugin1 to build")
 
   add_library(gripper_plugin3_1 SHARED src/gripper_plugin3_1.cc)
   target_link_libraries(gripper_plugin3_1  ${GAZEBO_libraries} ${roscpp_LIBRARIES})
@@ -487,6 +488,11 @@ target_link_libraries(gazebo_opticalflow_plugin ${OpticalFlow_LIBS})
     ${GAZEBO_libraries}
   )
 
+  target_link_libraries(gripper_plugin1
+  ${catkin_LIBRARIES}
+  ${roscpp_LIBRARIES}
+  ${GAZEBO_libraries}
+  )
 
   target_link_libraries(gripper_plugin3_1
   ${catkin_LIBRARIES}

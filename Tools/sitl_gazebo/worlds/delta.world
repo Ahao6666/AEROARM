@@ -329,7 +329,7 @@
         <kinematic>0</kinematic>
       </link>
     </model>
--->
+
     <model name='payload box'>
       <pose frame=''>0 0 0 0 0 0</pose>
       <static>0</static>
@@ -380,7 +380,7 @@
       </visual>
       </link>
     </model>
-
+-->
   <model name='Landing box'>
   <static>true</static>
     <link name='base_link'>

@@ -1,5 +1,5 @@
 <sdf version='1.5'>
-  <model name='FlyingDeltaArmLow'>
+  <model name='FlyingDeltaArmLow_test'>
 
  <link name='con1'>
       <pose frame=''>0.1525 -0.000228 -0.346913429511 0.534996 -0 1.57</pose>
@@ -330,8 +330,17 @@
 
 <!--
     <include>
+      <uri>model://gripper3</uri>
+      <pose>0.03 -0.01 -0.57 0 3.14159 0</pose>
+    </include>
+    <joint name="marker_fixed" type="fixed">
+      <parent>low_base</parent>
+      <child>gripper3::base_link</child>
+    </joint>
+
+    <include>
       <uri>model://gripper1</uri>
-      <pose>0.03 -0.03 -0.65 3.1416 3.14159 0</pose>
+      <pose>0.05 0.01 -0.62 3.1416 3.14159 0</pose>
     </include>
     <joint name="marker_fixed" type="fixed">
       <parent>low_base</parent>
@@ -340,12 +349,12 @@
 -->
 
     <include>
-      <uri>model://gripper3</uri>
-      <pose>0.03 -0.01 -0.57 0 3.14159 0</pose>
+      <uri>model://gripper2</uri>
+      <pose>0 0 -0.55 0 -1.5708 0</pose>
     </include>
     <joint name="marker_fixed" type="fixed">
       <parent>low_base</parent>
-      <child>gripper3::base_link</child>
+      <child>gripper2::base_link</child>
     </joint>
 
     <link name='con2'>
