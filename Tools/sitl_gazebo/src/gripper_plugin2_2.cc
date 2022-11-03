@@ -1,5 +1,5 @@
-#ifndef _GRIPPER_PLUGIN1_HH_
-#define _GRIPPER_PLUGIN1_HH_
+#ifndef _GRIPPER_PLUGIN2_2_HH_
+#define _GRIPPER_PLUGIN2_2_HH_
 
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
@@ -14,10 +14,10 @@
 namespace gazebo
 {
   	/// \brief A plugin to control a Manipulator sensor.
-	class GripperROSPlugin1 : public ModelPlugin
+	class GripperROSPlugin2_2 : public ModelPlugin
 	{
     		/// \brief Constructor
-		public: GripperROSPlugin1() {}
+		public: GripperROSPlugin2_2() {}
 
 		/// \brief Handle an incoming message from ROS
 		/// \param[in] _msg A float value that is used to set the velocity
@@ -106,8 +106,8 @@ namespace gazebo
 //  			this->joint = _model->GetJoints()[6];
 //			std::cerr << "\nThe manipulator plugin is attach to model[" <<
 //        		this->joint->GetScopedName() << "]\n";
-  			this->joint = _model->GetJoints()[13];	//15 for another gripper1
-			std::cerr << "\nThe gripper ROS plugin 1 is attach to joint[" <<
+  			this->joint = _model->GetJoints()[12];	//15 for another gripper1
+			std::cerr << "\nThe gripper2 ROS plugin 2 is attach to joint[" <<
         		this->joint->GetName() << "]\n";
 
 
@@ -130,7 +130,7 @@ namespace gazebo
 			{
   				int argc = 0;
   				char **argv = NULL;
-  				ros::init(argc, argv, "gazebo_manipulator_client_gripper_1",
+  				ros::init(argc, argv, "gazebo_manipulator_client_gripper2_2",
       				ros::init_options::NoSigintHandler);
 			}
 
@@ -138,21 +138,21 @@ namespace gazebo
 
 			// Create our ROS node. This acts in a similar manner to
 			// the Gazebo node
-			this->rosNode.reset(new ros::NodeHandle("gazebo_manipulator_client_gripper_1"));
+			this->rosNode.reset(new ros::NodeHandle("gazebo_manipulator_client_gripper2_2"));
 			ros::NodeHandle n;
- 			this->posi_pub = n.advertise<std_msgs::Float32>("joint/gripper1/position_msg", 10);
+ 			this->posi_pub = n.advertise<std_msgs::Float32>("joint/gripper2_2/position_msg", 10);
 			// Create a named topic, and subscribe to it.
 			ros::SubscribeOptions so =
   			ros::SubscribeOptions::create<std_msgs::Float32>(
-      			"/joint/gripper1/position_cmd",
+      			"/joint/gripper2_2/position_cmd",
       			0,
-      			boost::bind(&GripperROSPlugin1::OnRosMsg, this, _1),
+      			boost::bind(&GripperROSPlugin2_2::OnRosMsg, this, _1),
       			ros::VoidPtr(), &this->rosQueue);
 			this->rosSub = this->rosNode->subscribe(so);
 
 			// Spin up the queue helper thread.
 			this->rosQueueThread =
-  			std::thread(std::bind(&GripperROSPlugin1::QueueThread, this));
+  			std::thread(std::bind(&GripperROSPlugin2_2::QueueThread, this));
   			this->model->GetJointController()->SetPositionTarget(
       			this->joint->GetScopedName(), 0);
 
@@ -160,6 +160,6 @@ namespace gazebo
   	};
 
 	// Tell Gazebo about this plugin, so that Gazebo can call Load on this plugin.
- 	GZ_REGISTER_MODEL_PLUGIN(GripperROSPlugin1)
+ 	GZ_REGISTER_MODEL_PLUGIN(GripperROSPlugin2_2)
 }
 #endif

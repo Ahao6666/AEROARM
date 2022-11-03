@@ -3,22 +3,22 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="gripper2">
+  name="gripper1">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.0085692 -0.0033104 -7.8044E-05"
+        xyz="0.0013614 -0.029606 -0.00022964"
         rpy="0 0 0" />
       <mass
-        value="0.11906" />
+        value="0.18394" />
       <inertia
-        ixx="5.4401E-05"
-        ixy="-3.727E-07"
-        ixz="-2.0098E-07"
-        iyy="2.8843E-05"
-        iyz="-6.0295E-07"
-        izz="3.7188E-05" />
+        ixx="4.1667E-05"
+        ixy="2.8477E-07"
+        ixz="2.6891E-08"
+        iyy="0.00011208"
+        iyz="-6.7446E-07"
+        izz="0.00014361" />
     </inertial>
     <visual>
       <origin
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gripper2/meshes/base_link.STL" />
+          filename="package://gripper1/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gripper2/meshes/base_link.STL" />
+          filename="package://gripper1/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -48,17 +48,17 @@
     name="left_link">
     <inertial>
       <origin
-        xyz="-0.059051 -0.0021953 0.020051"
+        xyz="0.036311 -0.0093129 0.0019175"
         rpy="0 0 0" />
       <mass
-        value="0.026471" />
+        value="0.19697" />
       <inertia
-        ixx="1.3813E-06"
-        ixy="-1.211E-11"
-        ixz="1.2469E-06"
-        iyy="7.2157E-06"
-        iyz="-9.8817E-12"
-        izz="7.1751E-06" />
+        ixx="5.6663E-05"
+        ixy="1.6094E-20"
+        ixz="4.2352E-22"
+        iyy="2.3404E-05"
+        iyz="-6.7051E-06"
+        izz="5.7287E-05" />
     </inertial>
     <visual>
       <origin
@@ -66,12 +66,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gripper2/meshes/left_link.STL" />
+          filename="package://gripper1/meshes/left_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="1 1 1 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -80,43 +80,43 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gripper2/meshes/left_link.STL" />
+          filename="package://gripper1/meshes/left_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
     name="left_joint"
-    type="revolute">
+    type="prismatic">
     <origin
-      xyz="-0.0135 0 0.01"
+      xyz="-0.051103 -0.052 0.0005"
       rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="left_link" />
     <axis
-      xyz="0 -1 0" />
+      xyz="-1 0 0" />
     <limit
-      lower="-3"
-      upper="3"
+      lower="-0.05"
+      upper="0.05"
       effort="1"
-      velocity="1" />
+      velocity="0.1" />
   </joint>
   <link
     name="right_link">
     <inertial>
       <origin
-        xyz="-0.060951 -0.0033206 -0.004856"
+        xyz="0.015639 -0.005269 -0.0019301"
         rpy="0 0 0" />
       <mass
-        value="0.027594" />
+        value="0.098607" />
       <inertia
-        ixx="1.2215E-06"
-        ixy="5.8021E-12"
-        ixz="1.3138E-07"
-        iyy="9.4165E-06"
-        iyz="-7.6154E-12"
-        izz="9.537E-06" />
+        ixx="2.8497E-05"
+        ixy="4.6686E-06"
+        ixz="-4.0714E-07"
+        iyy="1.1715E-05"
+        iyz="3.3961E-06"
+        izz="2.8797E-05" />
     </inertial>
     <visual>
       <origin
@@ -124,12 +124,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gripper2/meshes/right_link.STL" />
+          filename="package://gripper1/meshes/right_link.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="1 1 1 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -138,26 +138,26 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://gripper2/meshes/right_link.STL" />
+          filename="package://gripper1/meshes/right_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
     name="right_joint"
-    type="revolute">
+    type="prismatic">
     <origin
-      xyz="-0.0135 0 -0.014"
-      rpy="0 0 0" />
+      xyz="0.037773 -0.056 0.0005"
+      rpy="3.1416 0 3.1416" />
     <parent
       link="base_link" />
     <child
       link="right_link" />
     <axis
-      xyz="0 -1 0" />
+      xyz="1 0 0" />
     <limit
-      lower="-3"
-      upper="3"
+      lower="-0.05"
+      upper="0.05"
       effort="1"
-      velocity="1" />
+      velocity="0.1" />
   </joint>
 </robot>
