@@ -141,11 +141,11 @@ namespace gazebo
 			// the Gazebo node
 			this->rosNode.reset(new ros::NodeHandle("gazebo_manipulator_client"));
 			ros::NodeHandle n;
- 			this->posi_pub = n.advertise<std_msgs::Float32>("joint/1/position_msg", 1000);
+ 			this->posi_pub = n.advertise<std_msgs::Float32>("joint/delta_1/position_msg", 1000);
 			// Create a named topic, and subscribe to it.
 			ros::SubscribeOptions so =
   			ros::SubscribeOptions::create<std_msgs::Float32>(
-      			"/joint/1/position_cmd",
+      			"/joint/delta_1/position_cmd",
       			0.6,
       			boost::bind(&DeltaROSPlugin1::OnRosMsg, this, _1),
       			ros::VoidPtr(), &this->rosQueue);
