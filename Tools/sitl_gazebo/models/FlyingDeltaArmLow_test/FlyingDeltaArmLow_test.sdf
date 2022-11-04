@@ -505,8 +505,6 @@
       <gravity>1</gravity>
     </link>
 
-
-
     <joint name='con2_lleg_3' type='revolute'>
       <child>lleg_32</child>
       <parent>con3</parent>
@@ -517,9 +515,10 @@
           <upper>1e+16</upper>
         </limit>
         <dynamics>
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -535,9 +534,10 @@
           <upper>1e+16</upper>
         </limit>
         <dynamics>
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -548,15 +548,15 @@
       <parent>con3</parent>
       <axis>
         <xyz>0.429542 -0.745358 0.509838</xyz>
-<!--        <xyz>0 1 0</xyz>-->
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
         </limit>
         <dynamics>
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -569,7 +569,6 @@
       <pose frame=''>-0.05 0 0 0 -0 0</pose>
       <axis>
         <xyz> 0.509838 0.86027 0.000685  </xyz>
-<!--        <xyz>0 1 0</xyz>-->
         <limit>
           <lower>-100</lower>
           <upper>100</upper>
@@ -577,8 +576,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0.0003</friction>
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
@@ -592,7 +591,6 @@
       <pose frame=''>-0.05 0 0 0 -0 0</pose>
       <axis>
         <xyz> 0.509838 0.86027 0.000685 </xyz>
-<!--        <xyz>0 1 0</xyz>-->
         <limit>
           <lower>-100</lower>
           <upper>100</upper>
@@ -600,8 +598,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0.0003</friction>
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
@@ -619,7 +617,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -636,8 +635,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
-
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -653,17 +652,14 @@
           <upper>1e+16</upper>
         </limit>
         <dynamics>
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-
-<!--11111111111111-->
-
-
 
     <joint name='con13_lleg_1' type='revolute'>
       <child>con13</child>
@@ -677,7 +673,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -694,7 +691,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -711,7 +709,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -722,7 +721,6 @@
       <pose frame=''>-0.05 0 0 0 -0 0</pose>
       <axis>
         <xyz> 0.509838 0.86027 0.000685 </xyz>
-<!--        <xyz>0 1 0</xyz>-->
         <limit>
           <lower>-100</lower>
           <upper>100</upper>
@@ -730,30 +728,18 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0.0003</friction>
+      	  <damping>0.001</damping>
+      	  <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
 
-
-
-
-
-
-
-
-
-
-
-
     <joint name='lleg1_base' type='revolute'>
       <child>low_base</child>
       <parent>con13</parent>
       <axis>
-<!--        <xyz>  0.000685 0.509838  0.86027 </xyz>-->
         <xyz> 0 1 0 </xyz>
         <limit>
           <lower>-1e+16</lower>
@@ -762,7 +748,6 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -782,15 +767,11 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-
-
 
     <joint name='lleg3_base' type='revolute'>
       <child>con33</child>
@@ -805,7 +786,6 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
