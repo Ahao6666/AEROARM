@@ -329,15 +329,15 @@
     </link>
 
 <!--
+
     <include>
-      <uri>model://gripper1</uri>
-      <pose>0 0 -0.57 1.5708 0 0</pose>
+      <uri>model://gripper2</uri>
+      <pose>0 0 -0.55 0 -1.5708 0</pose>
     </include>
     <joint name="marker_fixed" type="fixed">
       <parent>low_base</parent>
-      <child>gripper1::base_link</child>
+      <child>gripper2::base_link</child>
     </joint>
-
     <include>
       <uri>model://gripper3</uri>
       <pose>0.03 -0.01 -0.57 0 3.14159 0</pose>
@@ -349,12 +349,12 @@
 -->
 
     <include>
-      <uri>model://gripper2</uri>
-      <pose>0 0 -0.55 0 -1.5708 0</pose>
+      <uri>model://gripper1</uri>
+      <pose>0 0 -0.57 1.5708 0 0</pose>
     </include>
     <joint name="marker_fixed" type="fixed">
       <parent>low_base</parent>
-      <child>gripper2::base_link</child>
+      <child>gripper1::base_link</child>
     </joint>
 
     <link name='con2'>
