@@ -251,7 +251,7 @@
        <pose frame=''>0 0  0  0 -0 0</pose>
         <geometry>
          <cylinder>
-            <length>0.4</length>
+            <length>0.41</length>
             <radius>0.2</radius>
           </cylinder>
         </geometry>
@@ -260,7 +260,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
          <cylinder>
-            <length>0.4</length>
+            <length>0.41</length>
             <radius>0.2</radius>
           </cylinder>
         </geometry>
@@ -335,7 +335,7 @@
       <link name='link'>
       <inertial>
         <pose frame=''>0 0 0 0 0 0 </pose>
-        <mass>0.01</mass>
+        <mass>0.005</mass>
         <inertia>
           <ixx>2.67e-05</ixx>
           <ixy>0</ixy>
@@ -355,8 +355,8 @@
           <surface>
             <friction>
               <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
+                <mu>20</mu>
+                <mu2>20</mu2>
               </ode>
             </friction>
           </surface>
