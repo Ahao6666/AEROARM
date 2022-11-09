@@ -24,12 +24,11 @@
       <uri>model://FlyingDeltaArmLow_test</uri><!-- there are other "FlyingDeltaArmLow_test" need to be changed-->
       <pose>0 0 1.7265 0 0 0.5236</pose>
     </include>
+<!--
     <include>
       <uri>model://depth_camera</uri>
       <pose>0.1 0 1.6 0 0 0</pose>
     </include>
-
-
     <joint name="depth_camera_joint" type="revolute">
       <child>depth_camera::link</child>
       <parent>FlyingDelta::base_link</parent>
@@ -41,6 +40,7 @@
         </limit>
       </axis>
     </joint>
+-->
 <!--    <joint name='base' type='fixed'>-->
 <!--      <child>FlyingDelta::base_link</child>-->
 <!--      <parent>world</parent>-->
