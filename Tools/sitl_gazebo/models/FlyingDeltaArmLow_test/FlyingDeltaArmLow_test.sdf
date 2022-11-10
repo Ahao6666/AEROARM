@@ -1,7 +1,6 @@
 <sdf version='1.5'>
   <model name='FlyingDeltaArmLow_test'>
-
- <link name='con1'>
+  <link name='con1'>
       <pose frame=''>0.1525 -0.000228 -0.346913429511 0.534996 -0 1.57</pose>
       <inertial>
         <pose frame=''>0.005 0 0 3.14159 1.57079 3.14159</pose>
@@ -358,6 +357,8 @@
       <parent>low_base</parent>
       <child>gripper1::base_link</child>
     </joint>
+
+
 
     <link name='con2'>
       <pose frame=''>-0.076052546208 -0.132182874077 -0.346913429511 0.534996 -0 -0.524395</pose>
