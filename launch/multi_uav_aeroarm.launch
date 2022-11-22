@@ -56,7 +56,7 @@
         <arg name="fcu_url" default="udp://:14541@localhost:14581"/>
         <!-- PX4 SITL and vehicle spawn -->
         <include file="$(find px4)/launch/single_vehicle_spawn.launch">
-            <arg name="x" value="1"/>
+            <arg name="x" value="2"/>
             <arg name="y" value="1"/>
             <arg name="z" value="0"/>
             <arg name="R" value="0"/>
@@ -70,6 +70,9 @@
             <arg name="video_uri" value="$(eval 5600 + arg('ID'))"/>
             <arg name="mavlink_cam_udp_port" value="$(eval 14530 + arg('ID'))"/>
         </include>
+	<param name="uav1_position_offset_x" type="double" value="2"/>
+	<param name="uav1_position_offset_y" type="double" value="1"/>
+	<param name="uav1_position_offset_z" type="double" value="0"/>
         <!-- MAVROS -->
         <include file="$(find mavros)/launch/px4.launch">
             <arg name="fcu_url" value="$(arg fcu_url)"/>
