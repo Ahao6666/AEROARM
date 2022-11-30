@@ -1,0 +1,100 @@
+<sdf version='1.6'>
+  <model name='pv_car'>
+    <link name='base_link'>
+      <pose frame=''>0 0 0.6 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>1 0.94721 -0.29987 0 -0 0</pose>
+        <mass>2005.9</mass>
+        <inertia>
+          <ixx>713.82</ixx>
+          <ixy>7.671e-14</ixy>
+          <ixz>2.4162e-14</ixz>
+          <iyy>714.71</iyy>
+          <iyz>0.24973</iyz>
+          <izz>1344.8</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://pv_car/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://pv_car/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint_fix' type='fixed'>
+      <child>base_link</child>
+      <parent>world</parent>
+    </joint>
+    <link name='link1'>
+      <pose frame=''>0 0 0.6 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>1 0.95533 -0 0 -0 0</pose>
+        <mass>397.85</mass>
+        <inertia>
+          <ixx>131.55</ixx>
+          <ixy>-1.7892e-14</ixy>
+          <ixz>-4.8208e-16</ixz>
+          <iyy>132.95</iyy>
+          <iyz>1.4924e-15</iyz>
+          <izz>263.84</izz>
+        </inertia>
+      </inertial>
+      <collision name='link1_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://pv_car/meshes/link1.STL</uri>
+          </mesh>
+        </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>200</mu>
+                <mu2>200</mu2>
+              </ode>
+            </friction>
+          </surface>
+      </collision>
+      <visual name='link1_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://pv_car/meshes/link1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint1' type='revolute'>
+      <child>link1</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-0.5</lower>
+          <upper>-0.5</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>0</use_parent_model_frame>
+      </axis>
+    </joint>
+  </model>
+</sdf>
