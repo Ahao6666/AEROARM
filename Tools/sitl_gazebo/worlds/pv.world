@@ -15,8 +15,11 @@
 -->
     <include>
       <uri>model://pv_car</uri>
+<<<<<<< HEAD
 <!--      <pose frame=''>-1 0 0 0 -0 0</pose>	-->
       <static>0</static>
+=======
+>>>>>>> f596420a0641a04f45a3798c28ef410fb87f3208
     </include>
 
     <physics name='default_physics' default='0' type='ode'>

@@ -32,7 +32,10 @@
           </mesh>
         </geometry>
       </visual>
+<<<<<<< HEAD
       <kinematic>true</kinematic>
+=======
+>>>>>>> f596420a0641a04f45a3798c28ef410fb87f3208
     </link>
     <joint name='joint_fix' type='fixed'>
       <child>base_link</child>
@@ -87,8 +90,13 @@
         <limit>
           <lower>-0.5</lower>
           <upper>-0.5</upper>
+<<<<<<< HEAD
           <effort>10</effort>
           <velocity>10</velocity>
+=======
+          <effort>0</effort>
+          <velocity>0</velocity>
+>>>>>>> f596420a0641a04f45a3798c28ef410fb87f3208
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>

@@ -15,9 +15,6 @@
     <arg name="world" default="$(find mavlink_sitl_gazebo)/worlds/pv.world"/>
     <arg name="sdf" default="$(find mavlink_sitl_gazebo)/models/$(arg vehicle)/$(arg vehicle).sdf"/>
 
-    <param name="uav_position_offset_x" value="$(arg x)" />
-    <param name="uav_position_offset_y" value="$(arg y)" />
-    <param name="uav_position_offset_z" value="$(arg z)" />
     <!-- gazebo configs -->
     <arg name="gui" default="true"/>
     <arg name="debug" default="false"/>
