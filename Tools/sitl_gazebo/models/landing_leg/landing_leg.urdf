@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="landing_leg">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.7847E-11 -8.2696E-11 -0.077877"
+        rpy="0 0 0" />
+      <mass
+        value="0.62479" />
+      <inertia
+        ixx="0.0027513"
+        ixy="9.4494E-16"
+        ixz="-8.7806E-15"
+        iyy="0.0027513"
+        iyz="-1.0013E-14"
+        izz="0.0049694" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-0.02425 -0.030225 -0.046837"
+        rpy="0 0 0" />
+      <mass
+        value="0.037564" />
+      <inertia
+        ixx="7.4131E-05"
+        ixy="1.6243E-19"
+        ixz="2.4519E-19"
+        iyy="5.2962E-05"
+        iyz="-3.1562E-05"
+        izz="2.442E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.0245 -0.129 -0.093"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link1_1">
+    <inertial>
+      <origin
+        xyz="-0.0090618 5.5511E-17 6.7047E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.01515" />
+      <inertia
+        ixx="1.5658E-06"
+        ixy="6.6071E-21"
+        ixz="1.078E-21"
+        iyy="6.1989E-07"
+        iyz="-1.6374E-07"
+        izz="1.6121E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link1_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link1_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1_1"
+    type="revolute">
+    <origin
+      xyz="-0.015 -0.12417 -0.19241"
+      rpy="0 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link1_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.030225 -0.02425 -0.046837"
+        rpy="0 0 0" />
+      <mass
+        value="0.037564" />
+      <inertia
+        ixx="5.2962E-05"
+        ixy="-2.3699E-19"
+        ixz="3.1562E-05"
+        iyy="7.4131E-05"
+        iyz="3.5487E-19"
+        izz="2.442E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.129 0.0245 -0.093"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2_1">
+    <inertial>
+      <origin
+        xyz="1.1102E-16 -0.0090618 6.6787E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.01515" />
+      <inertia
+        ixx="6.1989E-07"
+        ixy="-9.8769E-21"
+        ixz="1.6374E-07"
+        iyy="1.5658E-06"
+        iyz="1.6502E-21"
+        izz="1.6121E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link2_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link2_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2_1"
+    type="revolute">
+    <origin
+      xyz="0.12417 -0.015 -0.19241"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link2_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.02425 0.030225 -0.046837"
+        rpy="0 0 0" />
+      <mass
+        value="0.037564" />
+      <inertia
+        ixx="7.4131E-05"
+        ixy="1.5416E-20"
+        ixz="-2.4595E-20"
+        iyy="5.2962E-05"
+        iyz="3.1562E-05"
+        izz="2.442E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="-0.0245 0.129 -0.093"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link3" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link3_1">
+    <inertial>
+      <origin
+        xyz="0.0090618 -8.3267E-17 6.2016E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.01515" />
+      <inertia
+        ixx="1.5658E-06"
+        ixy="-1.8499E-22"
+        ixz="8.8081E-23"
+        iyy="6.1989E-07"
+        iyz="1.6374E-07"
+        izz="1.6121E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link3_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link3_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3_1"
+    type="revolute">
+    <origin
+      xyz="0.015 0.12417 -0.19241"
+      rpy="0 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link3_1" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="-0.030225 0.02425 -0.046837"
+        rpy="0 0 0" />
+      <mass
+        value="0.037564" />
+      <inertia
+        ixx="5.2962E-05"
+        ixy="-8.8891E-20"
+        ixz="-3.1562E-05"
+        iyy="7.4131E-05"
+        iyz="-1.3448E-19"
+        izz="2.442E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="-0.129 -0.0245 -0.093"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link4_1">
+    <inertial>
+      <origin
+        xyz="2.7756E-17 0.0080618 6.6613E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.01515" />
+      <inertia
+        ixx="6.1989E-07"
+        ixy="-3.1931E-21"
+        ixz="-1.6374E-07"
+        iyy="1.5658E-06"
+        iyz="-4.9325E-22"
+        izz="1.6121E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link4_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://landing_leg/meshes/link4_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4_1"
+    type="revolute">
+    <origin
+      xyz="-0.12417 0.016 -0.19241"
+      rpy="0 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link4_1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
