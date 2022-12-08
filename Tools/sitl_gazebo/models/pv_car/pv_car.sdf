@@ -79,7 +79,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name='joint1' type='revolute'>
+    <joint name='pv_car_joint1' type='revolute'>
       <child>link1</child>
       <parent>base_link</parent>
       <axis>
