@@ -87,7 +87,6 @@
         <limit>
           <lower>-0.5</lower>
           <upper>-0.5</upper>
-
           <effort>10</effort>
           <velocity>10</velocity>
           <effort>0</effort>
