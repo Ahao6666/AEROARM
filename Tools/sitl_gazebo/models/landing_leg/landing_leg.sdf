@@ -449,5 +449,11 @@
         <use_parent_model_frame>0</use_parent_model_frame>
       </axis>
     </joint>
+    <plugin name="ft_sensor" filename="libgazebo_ros_ft_sensor.so">
+      <always_on>true</always_on>
+      <updateRate>10.0</updateRate>
+      <topicName>tf_joint1_1</topicName>
+      <jointName>joint1_1</jointName>
+    </plugin>
   </model>
 </sdf>

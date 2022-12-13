@@ -31,6 +31,12 @@
             <uri>model://pv_car/meshes/base_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <kinematic>true</kinematic>
     </link>
@@ -77,6 +83,12 @@
             <uri>model://pv_car/meshes/link1.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='pv_car_joint1' type='revolute'>
