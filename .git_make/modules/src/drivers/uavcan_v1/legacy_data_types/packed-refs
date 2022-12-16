@@ -1,0 +1,12 @@
+# pack-refs with: peeled fully-peeled sorted 
+73b4865ea649624d3fb1493581f05028371cbd93 refs/remotes/origin/ds015_message_set
+4f12c0993cf3aff0232d5c33e5ffe8bdb7ddfd74 refs/remotes/origin/gps_demo
+36a01e428b110ff84c8babe5b65667b5e3037d5e refs/remotes/origin/legacy
+fa56d44b94c98ec0b98b24f48702b526e07f0a67 refs/remotes/origin/legacy-DNM-fix-CI-ONLY-DO-NOT-MERGE
+c043498eacfe90a56e3246d4c2e4ae81aad13082 refs/remotes/origin/legacy-v0
+7f5489e6e916cc8b13db0582dcf9930e225594b9 refs/remotes/origin/master
+778c9cfce7b82da18c1fc02b543a444a4154006d refs/tags/v1.0.0rc1
+^1abd370556aea6aa93dfb0683965a8a43a26a29f
+9804a3e6972825586be252ce08dd899f44994b14 refs/tags/v1.0.0rc2
+dd4443f24dc33fcc81e5ef4abac659437649e7e1 refs/tags/v1.0.0rc3
+f28ecec932abef318b660bc1e3669772aa2de175 refs/tags/v1.0.0rc4

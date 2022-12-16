@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../Tools/jsbsim_bridge
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/PX4/px4-jsbsim-bridge.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "models/ATI-Resolution"]
+	active = true
+	url = https://github.com/FGMEMBERS/ATI-Resolution.git
+[submodule "models/Rascal"]
+	active = true
+	url = https://github.com/Auterion/FlightGear-Rascal.git

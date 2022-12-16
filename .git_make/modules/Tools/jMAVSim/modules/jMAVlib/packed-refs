@@ -1,0 +1,5 @@
+# pack-refs with: peeled fully-peeled sorted 
+0c1e8e5e851301efd8e65f781e204ad79460e98a refs/remotes/origin/in_jar_definition
+c08380767b21938391bec676a43b36b837af9ba4 refs/remotes/origin/master
+7bda9de8e91af052c45a73d66231d43f305fbd20 refs/remotes/origin/pr-maven
+25e6f451ddfbf46197cc2e6aab3bfc051c394e9d refs/remotes/origin/ulog_format

@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../../../../../src/drivers/uavcan/libuavcan/libuavcan/dsdl_compiler/pyuavcan
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/UAVCAN/pyuavcan
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "dsdl"]
+	active = true
+	url = https://github.com.cnpmjs.org/UAVCAN/dsdl

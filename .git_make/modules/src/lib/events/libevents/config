@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../src/lib/events/libevents
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/mavlink/libevents.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "libs/cpp/parse/nlohmann_json"]
+	active = true
+	url = https://github.com/ArthurSonzogni/nlohmann_json_cmake_fetchcontent.git

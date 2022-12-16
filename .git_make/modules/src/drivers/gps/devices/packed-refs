@@ -1,0 +1,12 @@
+# pack-refs with: peeled fully-peeled sorted 
+9b45d641d47b2eca2544bc256955a1eab5ea2b61 refs/remotes/origin/beidou_rtcm
+137a718aeb1b4e5c3e13e812ec762c3e2a284221 refs/remotes/origin/enable_debug_messages
+214b393fcd6502840c16c4c93085b245c777c26f refs/remotes/origin/generic_nmea_driver
+6815e1d3b294cd6ea583294ebadf191321e4beba refs/remotes/origin/master
+2691b5b219f5054bd2fba64a6d71734a1f9dbcf7 refs/remotes/origin/pr-cmake
+9b5bfcebe0a8834094f0dcaa0b50743b53da8fa4 refs/remotes/origin/pr-sensor_gps
+c0dac87150fb22d50fab493afcb42f8c230c4451 refs/remotes/origin/pr-timestamp_sample
+bcd57ae2396fe0fd88b725d81a686e072ef0ecc9 refs/remotes/origin/release/1.11
+9e27b50b01d9b3436808dc31b1bad6645df8fbba refs/remotes/origin/release_1.11_ubx_heading_f9p
+8b972262f3b1c8f2784e4ac91fc5b9d87f7c7902 refs/remotes/origin/ubx-sacc-hack
+22672278dfa3a30f2418d260d1ae3674ca915754 refs/remotes/origin/ubx_lower_baudrate

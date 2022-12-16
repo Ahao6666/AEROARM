@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../../../../../../src/lib/events/libevents/libs/cpp/parse/nlohmann_json
+[remote "origin"]
+	url = https://github.com/ArthurSonzogni/nlohmann_json_cmake_fetchcontent.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

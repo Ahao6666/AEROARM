@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../Tools/jMAVSim
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/PX4/jMAVSim.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "jMAVlib"]
+	active = true
+	url = https://github.com/PX4/jMAVlib.git

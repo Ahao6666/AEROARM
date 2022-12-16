@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../platforms/nuttx/NuttX/apps
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/PX4/NuttX-apps.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "px4_firmware_nuttx-10.0.0+"]
+	remote = origin
+	merge = refs/heads/px4_firmware_nuttx-10.0.0+

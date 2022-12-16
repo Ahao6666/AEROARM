@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../src/drivers/uavcan_v1/libcanard
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/UAVCAN/libcanard.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

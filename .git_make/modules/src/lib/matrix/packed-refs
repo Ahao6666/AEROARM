@@ -1,0 +1,19 @@
+# pack-refs with: peeled fully-peeled sorted 
+72e3aeff47a451ea9f70ec8196daea3be3dcfe80 refs/remotes/origin/compiler-warnings
+151ef3aa312e23e1c235305bf558b271beab805b refs/remotes/origin/data-access
+db4d31ac4c90b16a4deddf90771d9812107f5c73 refs/remotes/origin/expq-formatting
+3d1c9b988dff1d95f36cdd1df3e84d7a2365501c refs/remotes/origin/master
+6a7d83dd979eb6b4a1a99f740887b39234f7f093 refs/remotes/origin/pr-cleanup
+37518aa33bbf4583d56ab423f26960e5e0abb463 refs/remotes/origin/pr-cmake_header_only_lib
+745ebbeef39eeb0b27958ca59e2e5a6f4535d8a8 refs/remotes/origin/pr-cmake_wip
+f7a9cc406b081e83f5cde5a7153fa98d3fe9a915 refs/remotes/origin/pr-map
+65c8642cc81eac3679420ae34f855f58898d5ca3 refs/remotes/origin/pr-matrix_copyto_memcpy
+9fda65b149a3811210bd22abd2fc77e8d0a78169 refs/remotes/origin/pr-remove_default_init
+f3d9f221120d34be2a0bc2367189c95f7538ec48 refs/remotes/origin/pr-vector3f_optimize
+c31686379c7bbeacb469c3407b5e4ef159098c9c refs/remotes/origin/px4_matrix_ver
+db97062742a3b4c5089548c5a50148f5391aab4e refs/remotes/origin/reduce-temporaries
+b0631fa9d9298429644552e88f27cd4dbee7dbbd refs/remotes/origin/tinysolver
+39ea13d0fecb9aabbd62ccd734a8429d5da0f3bd refs/remotes/origin/wip-julianoes
+0b1bed6b00096248b81d65ec2be45843e20620b5 refs/tags/v1.0.0
+c563c41cd40b794a5407647220e1261d000b2e3d refs/tags/v1.0.1
+558777f34c654e992a1e99083cbbfa23b907d810 refs/tags/v1.0.2

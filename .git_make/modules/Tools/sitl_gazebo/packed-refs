@@ -1,0 +1,25 @@
+# pack-refs with: peeled fully-peeled sorted 
+f308aa572e8cb3b1f7b08d98dfcb5f1c05395189 refs/remotes/origin/add-lockstep-julianoes
+caa5adf8e5a7085966dec101b5f24271e65bc73d refs/remotes/origin/backup_distance_sensor
+47cb1353b7d7414139925f8672a106ad280a2e9d refs/remotes/origin/collision
+f1eef18464c2207b34d616fffb1c8b8d7b4fdde7 refs/remotes/origin/drop-tests
+c01cacdc18ad748beec0dba20a8384c4c1397dd2 refs/remotes/origin/iris-benchmarking
+7fda4d311a9daff4bec4f2fe83e63fde0b8f04b0 refs/remotes/origin/master
+8f005f687d95d5668b9e248392f26d4f230b56ab refs/remotes/origin/omnicopter
+f6fb5683a2bd47d7117268d5cf29a69198c61f5c refs/remotes/origin/pr-battery-plugin
+8003814e1b4593055891fb82d324b19d075629f6 refs/remotes/origin/pr-believer-camera
+3b05e39b5778df7ce754ebd214e4229e9e2c5b68 refs/remotes/origin/pr-cansat-model
+4b00d7459977c5d7d3a0d98c5b5dd56e5769e818 refs/remotes/origin/pr-cmake_gold
+e1cc6b0f51875b624eb08063b6d83d765d2ddea0 refs/remotes/origin/pr-control_allocation
+0b79bbb9cd19a049f74a6795dfa9070dc2f7e9d5 refs/remotes/origin/pr-control_allocation_plane
+7f61e7e696f95557e2a307437271a814c797d6a5 refs/remotes/origin/pr-fix-busyloop-mavlink
+2fa73c588f58d9213cbf98cf58917ada6075e61c refs/remotes/origin/pr-fix-liftdrag
+d29856868c0a0cdbdf661854eb73732160d4a982 refs/remotes/origin/pr-gold_linker
+c0d926f7b15126498a05c466891d08083b864afc refs/remotes/origin/pr-hitl-capable-jinja
+45c6e5b4fd965c2b682170c4681977c8f2d14e9e refs/remotes/origin/pr-jl-mixers_6dof
+7b3de339ebd78729dc259f140b466d150146a9fb refs/remotes/origin/pr-mavlink_interface_debug
+f1ddbd61a63810a3af2a501ce2d43c54b387aac2 refs/remotes/origin/pr-odometry-plugin
+8e774b7925f9dd0c7b00c41a0f12e2da09818cd1 refs/remotes/origin/pr-thermal-plugin
+897c4170b7f40f648b3b0f8387bcecc97fa882f4 refs/remotes/origin/pusher_vtol
+67e140addb6a88397cf65f8198739bff648c6fa4 refs/remotes/origin/sync-before-abort
+fe2ce9c8155ebeee54c32e64f65dd5e97288cbec refs/remotes/origin/tarmac-workaround-do-no-remove

@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+25efcb57ce0e0e98fb3d281c130a8a6e6cbbf472 refs/remotes/origin/follow
+0a5375a70689aac53143768de9033034f3636022 refs/remotes/origin/master
+0af86a714efa81030ccb432ef63e3f873089dbf5 refs/remotes/origin/pr-default_update_rate
+335472dfcd4549be9a88578f9d95c368c69444b7 refs/remotes/origin/pr-maven
+974181ab5eb11d9e5373ca5efb049bc0baed2ba9 refs/remotes/origin/uart_write_buffer_check

@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../src/modules/micrortps_bridge/micro-CDR
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/PX4/Micro-CDR.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../Tools/sitl_gazebo
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/PX4/PX4-SITL_gazebo.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "external/OpticalFlow"]
+	active = true
+	url = https://github.com.cnpmjs.org/PX4/OpticalFlow.git

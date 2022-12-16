@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../src/lib/crypto/monocypher
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/PX4/Monocypher.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "px4"]
+	remote = origin
+	merge = refs/heads/px4

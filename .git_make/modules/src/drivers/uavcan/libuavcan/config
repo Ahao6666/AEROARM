@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../src/drivers/uavcan/libuavcan
+[remote "origin"]
+	url = https://github.com.cnpmjs.org/PX4/libuavcan.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "px4"]
+	remote = origin
+	merge = refs/heads/px4
+[submodule "dsdl"]
+	active = true
+	url = https://github.com/UAVCAN/dsdl
+[submodule "libuavcan/dsdl_compiler/pyuavcan"]
+	active = true
+	url = https://github.com.cnpmjs.org/UAVCAN/pyuavcan
