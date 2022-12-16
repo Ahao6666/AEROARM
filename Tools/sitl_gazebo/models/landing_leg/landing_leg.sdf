@@ -448,12 +448,26 @@
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
       </axis>
+<!--
+      <sensor name="zz_force_torque" type="force_torque">
+	<pose>0 0 0 0 0 0</pose>
+	<always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>30</update_rate>
+  	<force_torque>
+    	  <frame>child</frame>
+    	  <measure_direction>child_to_parent</measure_direction>
+  	</force_torque>
+      </sensor>
+-->
     </joint>
+
     <plugin name="ft_sensor" filename="libgazebo_ros_ft_sensor.so">
       <always_on>true</always_on>
       <updateRate>10.0</updateRate>
-      <topicName>tf_joint1_1</topicName>
-      <jointName>joint1_1</jointName>
+      <topicName>zz_joint1_1</topicName>
+      <jointName>joint4_1</jointName>
     </plugin>
+
   </model>
 </sdf>
