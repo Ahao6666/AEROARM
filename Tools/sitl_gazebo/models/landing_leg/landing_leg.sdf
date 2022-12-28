@@ -122,13 +122,14 @@
     <joint name='joint1_1' type='revolute'>
       <child>link1_1</child>
       <parent>link1</parent>
+      <pose>0 0 0 0 0</pose>
       <axis>
         <xyz>1 0 0</xyz>
         <limit>
-          <lower>-5</lower>
-          <upper>5</upper>
-          <effort>10</effort>
-          <velocity>10</velocity>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -136,6 +137,16 @@
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
       </axis>
+      <sensor name="force_torque" type="force_torque">
+	<pose frame=''>0 0 0 0 0 0</pose>
+	<always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+  	<force_torque>
+    	  <frame>parent</frame>
+    	  <measure_direction>child_to_parent</measure_direction>
+  	</force_torque>
+      </sensor>
     </joint>
     <link name='link2'>
       <pose frame=''>0.129 0.0245 -0.093 0 -0 0</pose>
@@ -226,13 +237,14 @@
     <joint name='joint2_1' type='revolute'>
       <child>link2_1</child>
       <parent>link2</parent>
+      <pose>0 0 0 0 0 1.5708</pose>
       <axis>
         <xyz>0 1 0</xyz>
         <limit>
-          <lower>-5</lower>
-          <upper>5</upper>
-          <effort>10</effort>
-          <velocity>10</velocity>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -240,6 +252,16 @@
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
       </axis>
+      <sensor name="force_torque" type="force_torque">
+	<pose frame=''>0 0 0 0 0 0</pose>
+	<always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+  	<force_torque>
+    	  <frame>parent</frame>
+    	  <measure_direction>child_to_parent</measure_direction>
+  	</force_torque>
+      </sensor>
     </joint>
     <link name='link3'>
       <pose frame=''>-0.0245 0.129 -0.093 0 -0 0</pose>
@@ -330,13 +352,14 @@
     <joint name='joint3_1' type='revolute'>
       <child>link3_1</child>
       <parent>link3</parent>
+      <pose>0 0 0 0 0 -3.1416</pose>
       <axis>
         <xyz>-1 0 0</xyz>
         <limit>
-          <lower>-5</lower>
-          <upper>5</upper>
-          <effort>10</effort>
-          <velocity>10</velocity>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -344,6 +367,16 @@
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
       </axis>
+      <sensor name="force_torque" type="force_torque">
+	<pose frame=''>0 0 0 0 0 0</pose>
+	<always_on>true</always_on>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+  	<force_torque>
+    	  <frame>parent</frame>
+    	  <measure_direction>child_to_parent</measure_direction>
+  	</force_torque>
+      </sensor>
     </joint>
     <link name='link4'>
       <pose frame=''>-0.129 -0.0245 -0.093 0 -0 0</pose>
@@ -434,13 +467,14 @@
     <joint name='joint4_1' type='revolute'>
       <child>link4_1</child>
       <parent>link4</parent>
+      <pose>0 0 0 0 0 -1.5708</pose>
       <axis>
         <xyz>0 -1 0</xyz>
         <limit>
-          <lower>-5</lower>
-          <upper>5</upper>
-          <effort>10</effort>
-          <velocity>10</velocity>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -448,26 +482,16 @@
         </dynamics>
         <use_parent_model_frame>0</use_parent_model_frame>
       </axis>
-<!--
-      <sensor name="zz_force_torque" type="force_torque">
-	<pose>0 0 0 0 0 0</pose>
+      <sensor name="force_torque" type="force_torque">
+	<pose frame=''>0 0 0 0 0 0</pose>
 	<always_on>true</always_on>
         <visualize>true</visualize>
-        <update_rate>30</update_rate>
+        <update_rate>10</update_rate>
   	<force_torque>
-    	  <frame>child</frame>
+    	  <frame>parent</frame>
     	  <measure_direction>child_to_parent</measure_direction>
   	</force_torque>
       </sensor>
--->
     </joint>
-
-    <plugin name="ft_sensor" filename="libgazebo_ros_ft_sensor.so">
-      <always_on>true</always_on>
-      <updateRate>10.0</updateRate>
-      <topicName>zz_joint1_1</topicName>
-      <jointName>joint4_1</jointName>
-    </plugin>
-
   </model>
 </sdf>
