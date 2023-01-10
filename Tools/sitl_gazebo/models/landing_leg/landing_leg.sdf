@@ -156,7 +156,7 @@
       <sensor name="force_torque" type="force_torque">
         <pose frame=''>0 0 0 0 0 0</pose>
         <always_on>true</always_on>
-        <visualize>true</visualize>
+        <visualize>false</visualize>
         <update_rate>10</update_rate>
   	    <force_torque>
     	    <frame>parent</frame>
@@ -279,7 +279,7 @@
       <sensor name="force_torque" type="force_torque">
         <pose frame=''>0 0 0 0 0 0</pose>
         <always_on>true</always_on>
-        <visualize>true</visualize>
+        <visualize>false</visualize>
         <update_rate>10</update_rate>
   	    <force_torque>
           <frame>parent</frame>
@@ -402,7 +402,7 @@
       <sensor name="force_torque" type="force_torque">
         <pose frame=''>0 0 0 0 0 0</pose>
         <always_on>true</always_on>
-        <visualize>true</visualize>
+        <visualize>false</visualize>
         <update_rate>10</update_rate>
   	    <force_torque>
           <frame>parent</frame>
@@ -525,7 +525,7 @@
       <sensor name="force_torque" type="force_torque">
         <pose frame=''>0 0 0 0 0 0</pose>
         <always_on>true</always_on>
-        <visualize>true</visualize>
+        <visualize>false</visualize>
         <update_rate>10</update_rate>
   	    <force_torque>
           <frame>parent</frame>

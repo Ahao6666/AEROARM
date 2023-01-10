@@ -78,7 +78,7 @@
       <child>left_link</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>-1 0 -0.6</xyz>
+        <xyz>-1 0 -0</xyz>
         <limit>
           <lower>-0.025</lower>
           <upper>0</upper>
@@ -139,7 +139,7 @@
       <child>right_link</child>
       <parent>base_link</parent>
       <axis>
-        <xyz>1 0 0.6</xyz>
+        <xyz>1 0 0</xyz>
         <limit>
           <lower>0</lower>
           <upper>0.025</upper>
