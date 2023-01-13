@@ -180,8 +180,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-<!--	<damping>0.1</damping>-->
-<!--<friction>0.1</friction>-->
+          <damping>0</damping>
+          <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -200,8 +200,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-<!--	<damping>0.1</damping>-->
-<!--<friction>0.1</friction>-->
+          <damping>0</damping>
+          <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
@@ -221,8 +221,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-<!--	<damping>0.1</damping>-->
-<!--	<friction>0.1</friction>-->
+          <damping>0</damping>
+          <friction>0</friction>
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>

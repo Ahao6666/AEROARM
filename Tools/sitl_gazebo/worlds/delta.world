@@ -232,7 +232,7 @@
     </model>
 
     <model name='load cylinder'>
-      <pose frame=''>0 0 0 0 -0 0</pose>
+      <pose frame=''>0.7 -1.5 0.3 0 -0 0</pose>
       <static>1</static>
       <link name='link'>
       <inertial>
@@ -251,8 +251,8 @@
        <pose frame=''>0 0  0  0 -0 0</pose>
         <geometry>
          <cylinder>
-            <length>0.41</length>
-            <radius>0.2</radius>
+            <length>0.6</length>
+            <radius>0.15</radius>
           </cylinder>
         </geometry>
       </collision>
@@ -260,8 +260,8 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
          <cylinder>
-            <length>0.41</length>
-            <radius>0.2</radius>
+            <length>0.6</length>
+            <radius>0.15</radius>
           </cylinder>
         </geometry>
         <material>
@@ -330,7 +330,7 @@
     </model>
 -->
     <model name='payload box'>
-      <pose frame=''>0.01 -0.01 0.3 0 -0 0.785</pose>
+      <pose frame=''>0.7 -1.5 0.6 0 -0 0.785</pose>
       <static>0</static>
       <link name='link'>
       <inertial>
@@ -349,7 +349,7 @@
        <pose frame=''>0 0  0  0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.035 0.07 0.035</size>
+            <size>0.035 0.035 0.035</size>
           </box>
         </geometry>
           <surface>
@@ -365,7 +365,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.035 0.07 0.035</size>
+            <size>0.035 0.035 0.035</size>
           </box>
         </geometry>
         <material>

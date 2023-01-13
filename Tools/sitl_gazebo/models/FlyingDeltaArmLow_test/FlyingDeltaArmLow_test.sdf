@@ -580,7 +580,6 @@
       	  <damping>0.001</damping>
       	  <friction>0</friction>
         </dynamics>
-        <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
@@ -602,7 +601,6 @@
       	  <damping>0.001</damping>
       	  <friction>0</friction>
         </dynamics>
-        <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
@@ -732,7 +730,6 @@
       	  <damping>0.001</damping>
       	  <friction>0</friction>
         </dynamics>
-        <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
@@ -769,7 +766,6 @@
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
-        <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
@@ -788,7 +784,6 @@
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
         </dynamics>
-        <use_parent_model_frame>0</use_parent_model_frame>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
