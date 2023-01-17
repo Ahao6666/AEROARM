@@ -163,8 +163,8 @@
         <topicName>gripper_right_link_pose_gt</topicName>
         <gaussianNoise>0.0</gaussianNoise>
         <frameName>world</frameName>
-        <xyzOffsets>0 0 0</xyzOffsets>
-        <rpyOffsets>0 0 0</rpyOffsets>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
       </plugin>
   <plugin name="gripper_control1_1" filename="libgripper_plugin1_1.so"/>
   <plugin name="gripper_control1_2" filename="libgripper_plugin1_2.so"/>
