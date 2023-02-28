@@ -1,0 +1,36 @@
+<sdf version='1.7'>
+  <model name='screen'>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0 0 0.89649 0 -0 0</pose>
+        <mass>54.216</mass>
+        <inertia>
+          <ixx>14.751</ixx>
+          <ixy>2.6682e-17</ixy>
+          <ixz>3.3413e-15</ixz>
+          <iyy>19.297</iyy>
+          <iyz>1.4444e-16</iyz>
+          <izz>4.5552</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://screen/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://screen/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
