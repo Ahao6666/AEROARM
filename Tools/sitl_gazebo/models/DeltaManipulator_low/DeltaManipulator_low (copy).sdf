@@ -1,0 +1,1125 @@
+<sdf version='1.7'>
+  <model name='DeltaManipulator_low'>
+    <link name='low_base_link'>
+      <inertial>
+        <pose>0 -0 0.009282 0 -0 0</pose>
+        <mass>0.0277053</mass>
+        <inertia>
+          <ixx>7.21837e-06</ixx>
+          <ixy>8.45348e-15</ixy>
+          <ixz>4.72158e-13</ixz>
+          <iyy>7.21837e-06</iyy>
+          <iyz>2.82195e-12</iyz>
+          <izz>1.36261e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='low_base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/low_base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='low_base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/low_base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='low_base_link_joint_con131' type='revolute'>
+      <pose relative_to='low_base_link'>-0.0324 -0.03 0.01 0 -0 0</pose>
+      <parent>low_base_link</parent>
+      <child>con131</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con131'>
+      <pose relative_to='low_base_link_joint_con131'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.0084 -0.002671 0.004067 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>5.69218e-08</ixx>
+          <ixy>2.55914e-21</ixy>
+          <ixz>-4.05166e-21</ixz>
+          <iyy>5.24618e-08</iyy>
+          <iyz>1.79112e-08</iyz>
+          <izz>3.69464e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con131_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con131.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con131_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con131.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con111_joint_con121' type='revolute'>
+      <pose relative_to='con131'>0.0084 -0.013859 0.005255 -1.5708 0.581034 -1.5708</pose>
+      <parent>con131</parent>
+      <child>con121</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con121'>
+      <pose relative_to='con111_joint_con121'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.008563 -0.105003 0 0 -0 0</pose>
+        <mass>0.00783743</mass>
+        <inertia>
+          <ixx>1.33284e-05</ixx>
+          <ixy>-9.91013e-13</ixy>
+          <ixz>-1.33622e-13</ixz>
+          <iyy>1.11815e-07</iyy>
+          <iyz>1.13821e-13</iyz>
+          <izz>1.33597e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='con121_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con121.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con121_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con121.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con121_joint_con111' type='revolute'>
+      <pose relative_to='con121'>0 -0.216 0 0 -0 0</pose>
+      <parent>con121</parent>
+      <child>con111</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con111'>
+      <pose relative_to='con121_joint_con111'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0087 -0.007134 0 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>6.42231e-08</ixx>
+          <ixy>-3.25636e-20</ixy>
+          <ixz>3.8648e-23</ixz>
+          <iyy>2.51851e-08</iyy>
+          <iyz>-4.04036e-21</iyz>
+          <izz>5.69218e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con111_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con111.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con111_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con111.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con111_joint_con101' type='revolute'>
+      <pose relative_to='con111'>-0.0087 -0.012 -0.0084 2.15183 -1.5708 0</pose>
+      <parent>con111</parent>
+      <child>con101</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name='con112_joint_con101' type='revolute'>
+      <pose relative_to='con112'>-0.0087 -0.012 -0.0084 2.15183 -1.5708 0</pose>
+      <parent>con112</parent>
+      <child>con101</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con101'>
+      <pose relative_to='con111_joint_con101'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.0324 9e-06 1.5e-05 0 -0 0</pose>
+        <mass>0.00233439</mass>
+        <inertia>
+          <ixx>1.61756e-08</ixx>
+          <ixy>-7.50049e-21</ixy>
+          <ixz>-7.13217e-23</ixz>
+          <iyy>5.59999e-07</iyy>
+          <iyz>-8.76657e-11</iyz>
+          <izz>5.59708e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name='con101_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con101.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con101_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con101.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='low_base_link_joint_con132' type='revolute'>
+      <pose relative_to='low_base_link'>0.0324 -0.03 0.01 0 -0 0</pose>
+      <parent>low_base_link</parent>
+      <child>con132</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con132'>
+      <pose relative_to='low_base_link_joint_con132'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0084 -0.002671 0.004067 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>5.69218e-08</ixx>
+          <ixy>2.56603e-21</ixy>
+          <ixz>-4.05505e-21</ixz>
+          <iyy>5.24618e-08</iyy>
+          <iyz>1.79112e-08</iyz>
+          <izz>3.69464e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con132_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con132.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con132_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con132.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con112_joint_con122' type='revolute'>
+      <pose relative_to='con132'>-0.0084 -0.013859 0.005255 -1.5708 0.581034 -1.5708</pose>
+      <parent>con132</parent>
+      <child>con122</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con122'>
+      <pose relative_to='con112_joint_con122'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.008567 -0.107998 0 0 -0 0</pose>
+        <mass>0.00805476</mass>
+        <inertia>
+          <ixx>1.33289e-05</ixx>
+          <ixy>-9.91013e-13</ixy>
+          <ixz>-1.33622e-13</ixz>
+          <iyy>1.1727e-07</iyy>
+          <iyz>1.13822e-13</iyz>
+          <izz>1.33651e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='con122_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con122.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con122_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con122.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con122_joint_con112' type='revolute'>
+      <pose relative_to='con122'>0 -0.216 0 0 -0 0</pose>
+      <parent>con122</parent>
+      <child>con112</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con112'>
+      <pose relative_to='con122_joint_con112'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0087 -0.007134 0 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>6.42231e-08</ixx>
+          <ixy>-3.26223e-20</ixy>
+          <ixz>3.04521e-23</ixz>
+          <iyy>2.51851e-08</iyy>
+          <iyz>-4.03079e-21</iyz>
+          <izz>5.69218e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con112_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con112.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con112_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con112.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='low_base_link_joint_con231' type='revolute'>
+      <pose relative_to='low_base_link'>0.042181 -0.013059 0.01 0 0 -1.0472</pose>
+      <parent>low_base_link</parent>
+      <child>con231</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con231'>
+      <pose relative_to='low_base_link_joint_con231'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0084 0.002671 0.004067 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>5.69218e-08</ixx>
+          <ixy>8.54296e-19</ixy>
+          <ixz>2.07455e-18</ixz>
+          <iyy>5.24618e-08</iyy>
+          <iyz>-1.79112e-08</iyz>
+          <izz>3.69464e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con231_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con231.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con231_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con231.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con211_joint_con221' type='revolute'>
+      <pose relative_to='con231'>-0.0084 0.013859 0.005255 0.306889 0.581034 1.5708</pose>
+      <parent>con231</parent>
+      <child>con221</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con221'>
+      <pose relative_to='con211_joint_con221'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.008567 0.032625 0.102952 0 -0 0</pose>
+        <mass>0.00805476</mass>
+        <inertia>
+          <ixx>1.33289e-05</ixx>
+          <ixy>1.72633e-13</ixy>
+          <ixz>9.86337e-13</ixz>
+          <iyy>1.21561e-05</iyy>
+          <iyz>-3.81512e-06</iyz>
+          <izz>1.32629e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='con221_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con221.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con221_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con221.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con221_joint_con211' type='revolute'>
+      <pose relative_to='con221'>0 0.065252 0.205908 0 -0 0</pose>
+      <parent>con221</parent>
+      <child>con211</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con211'>
+      <pose relative_to='con221_joint_con211'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0087 0.002155 0.006801 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>6.42231e-08</ixx>
+          <ixy>8.57311e-19</ixy>
+          <ixz>1.29525e-18</ixz>
+          <iyy>5.40255e-08</iyy>
+          <iyz>-9.13954e-09</iyz>
+          <izz>2.80814e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con211_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con211.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con211_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con211.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con211_joint_con201' type='revolute'>
+      <pose relative_to='con211'>-0.0087 -0.004382 0.013977 2.56056 0.306889 1.5708</pose>
+      <parent>con211</parent>
+      <child>con201</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name='con212_joint_con201' type='revolute'>
+      <pose relative_to='con212'>-0.0087 -0.004382 0.013977 2.56056 0.306889 1.5708</pose>
+      <parent>con212</parent>
+      <child>con201</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con201'>
+      <pose relative_to='con211_joint_con201'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.0324 -9e-06 -1.5e-05 0 -0 0</pose>
+        <mass>0.00233439</mass>
+        <inertia>
+          <ixx>1.61756e-08</ixx>
+          <ixy>4.7358e-22</ixy>
+          <ixz>-4.56895e-22</ixz>
+          <iyy>5.59999e-07</iyy>
+          <iyz>-8.76657e-11</iyz>
+          <izz>5.59708e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name='con201_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con201.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con201_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con201.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='low_base_link_joint_con232' type='revolute'>
+      <pose relative_to='low_base_link'>0.009781 0.043059 0.01 3.14159 -0 2.0944</pose>
+      <parent>low_base_link</parent>
+      <child>con232</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con232'>
+      <pose relative_to='low_base_link_joint_con232'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0084 0.002671 -0.004067 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>5.69218e-08</ixx>
+          <ixy>-8.55179e-19</ixy>
+          <ixz>2.07811e-18</ixz>
+          <iyy>5.24618e-08</iyy>
+          <iyz>1.79112e-08</iyz>
+          <izz>3.69464e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con232_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con232.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con232_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con232.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con212_joint_con222' type='revolute'>
+      <pose relative_to='con232'>-0.0084 0.013859 -0.005255 -2.8347 -0.581034 1.5708</pose>
+      <parent>con232</parent>
+      <child>con222</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con222'>
+      <pose relative_to='con212_joint_con222'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.008567 0.032625 0.102952 0 -0 0</pose>
+        <mass>0.00805476</mass>
+        <inertia>
+          <ixx>1.33289e-05</ixx>
+          <ixy>1.72633e-13</ixy>
+          <ixz>9.86337e-13</ixz>
+          <iyy>1.21561e-05</iyy>
+          <iyz>-3.81512e-06</iyz>
+          <izz>1.32629e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='con222_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con222.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con222_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con222.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con222_joint_con212' type='revolute'>
+      <pose relative_to='con222'>0 0.065252 0.205908 0 -0 0</pose>
+      <parent>con222</parent>
+      <child>con212</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con212'>
+      <pose relative_to='con222_joint_con212'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0087 0.002155 0.006801 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>6.42231e-08</ixx>
+          <ixy>8.57311e-19</ixy>
+          <ixz>1.29527e-18</ixz>
+          <iyy>5.40255e-08</iyy>
+          <iyz>-9.13954e-09</iyz>
+          <izz>2.80814e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con212_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con212.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con212_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con212.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='low_base_link_joint_con331' type='revolute'>
+      <pose relative_to='low_base_link'>-0.009781 0.043059 0.01 -3.14159 -0 -2.0944</pose>
+      <parent>low_base_link</parent>
+      <child>con331</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con331'>
+      <pose relative_to='low_base_link_joint_con331'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.0084 0.002671 -0.004067 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>5.69218e-08</ixx>
+          <ixy>8.49976e-19</ixy>
+          <ixz>-2.07046e-18</ixz>
+          <iyy>5.24618e-08</iyy>
+          <iyz>1.79112e-08</iyz>
+          <izz>3.69464e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con331_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con331.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con331_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con331.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con311_joint_con321' type='revolute'>
+      <pose relative_to='con331'>0.0084 0.013859 -0.005255 -0.306889 -0.581034 1.5708</pose>
+      <parent>con331</parent>
+      <child>con321</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con321'>
+      <pose relative_to='con311_joint_con321'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.008567 0.032625 -0.102952 0 -0 0</pose>
+        <mass>0.00805476</mass>
+        <inertia>
+          <ixx>1.33289e-05</ixx>
+          <ixy>4.27371e-13</ixy>
+          <ixz>-9.05571e-13</ixz>
+          <iyy>1.21561e-05</iyy>
+          <iyz>3.81512e-06</iyz>
+          <izz>1.32629e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='con321_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con321.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con321_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con321.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con321_joint_311' type='revolute'>
+      <pose relative_to='con321'>0 0.065252 -0.205908 0 -0 0</pose>
+      <parent>con321</parent>
+      <child>con311</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con311'>
+      <pose relative_to='con321_joint_311'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0087 0.002155 -0.006801 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>6.42231e-08</ixx>
+          <ixy>8.57144e-19</ixy>
+          <ixz>-1.29534e-18</ixz>
+          <iyy>5.40255e-08</iyy>
+          <iyz>9.13954e-09</iyz>
+          <izz>2.80814e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con311_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con311.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con311_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con311.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con311_joint_con301' type='revolute'>
+      <pose relative_to='con311'>-0.0087 0.011633 -0.008902 -0.581034 0.306889 -1.5708</pose>
+      <parent>con311</parent>
+      <child>con301</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <joint name='con312_joint_con301' type='revolute'>
+      <pose relative_to='con312'>-0.0087 0.011633 -0.008902 -0.581034 0.306889 -1.5708</pose>
+      <parent>con312</parent>
+      <child>con301</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con301'>
+      <pose relative_to='con311_joint_con301'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.0324 -9e-06 -1.5e-05 0 -0 0</pose>
+        <mass>0.00233439</mass>
+        <inertia>
+          <ixx>1.61756e-08</ixx>
+          <ixy>-4.07391e-22</ixy>
+          <ixz>4.17053e-23</ixz>
+          <iyy>5.59999e-07</iyy>
+          <iyz>-8.76657e-11</iyz>
+          <izz>5.59708e-07</izz>
+        </inertia>
+      </inertial>
+      <collision name='con301_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con301.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con301_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con301.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='low_base_link_joint_con332' type='revolute'>
+      <pose relative_to='low_base_link'>-0.042181 -0.013059 0.01 0 -0 1.0472</pose>
+      <parent>low_base_link</parent>
+      <child>con332</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <effort>0</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con332'>
+      <pose relative_to='low_base_link_joint_con332'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.0084 0.002671 0.004067 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>5.69218e-08</ixx>
+          <ixy>-8.49993e-19</ixy>
+          <ixz>-2.07046e-18</ixz>
+          <iyy>5.24618e-08</iyy>
+          <iyz>-1.79112e-08</iyz>
+          <izz>3.69464e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con332_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con332.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con332_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con332.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con312_joint_con322' type='revolute'>
+      <pose relative_to='con332'>0.0084 0.013859 0.005255 2.8347 0.581034 1.5708</pose>
+      <parent>con332</parent>
+      <child>con322</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con322'>
+      <pose relative_to='con312_joint_con322'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.008567 0.032625 -0.102952 0 -0 0</pose>
+        <mass>0.00805476</mass>
+        <inertia>
+          <ixx>1.33289e-05</ixx>
+          <ixy>4.27371e-13</ixy>
+          <ixz>-9.05571e-13</ixz>
+          <iyy>1.21561e-05</iyy>
+          <iyz>3.81512e-06</iyz>
+          <izz>1.32629e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='con322_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con322.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con322_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con322.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='con322_joint_con312' type='revolute'>
+      <pose relative_to='con322'>0 0.065252 -0.205908 0 -0 0</pose>
+      <parent>con322</parent>
+      <child>con312</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='con312'>
+      <pose relative_to='con322_joint_con312'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.0087 0.002155 -0.006801 0 -0 0</pose>
+        <mass>0.00144663</mass>
+        <inertia>
+          <ixx>6.42231e-08</ixx>
+          <ixy>8.57133e-19</ixy>
+          <ixz>-1.29537e-18</ixz>
+          <iyy>5.40255e-08</iyy>
+          <iyz>9.13954e-09</iyz>
+          <izz>2.80814e-08</izz>
+        </inertia>
+      </inertial>
+      <collision name='con312_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con312.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='con312_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://DeltaManipulator_low/meshes/con312.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

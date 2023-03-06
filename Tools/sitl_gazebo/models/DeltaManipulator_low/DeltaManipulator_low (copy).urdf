@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="DeltaManipulator_low">
+  <link
+    name="low_base_link">
+    <inertial>
+      <origin
+        xyz="1.67429282660336E-08 -1.09064659664648E-08 0.0092823606262164"
+        rpy="0 0 0" />
+      <mass
+        value="0.0277052530707091" />
+      <inertia
+        ixx="7.21837490929564E-06"
+        ixy="8.45347838747331E-15"
+        ixz="4.72158449893884E-13"
+        iyy="7.21836771731911E-06"
+        iyz="2.82195144743653E-12"
+        izz="1.36261235680752E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/low_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.23921568627451 0.23921568627451 0.23921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/low_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="con132">
+    <inertial>
+      <origin
+        xyz="-0.00839999999998792 -0.00267079063628317 0.0040673112164073"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342057004" />
+      <inertia
+        ixx="5.69218111316834E-08"
+        ixy="2.56602943940187E-21"
+        ixz="-4.05504569551322E-21"
+        iyy="5.2461767905543E-08"
+        iyz="1.79111511505629E-08"
+        izz="3.69464327587086E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con132.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con132.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="low_base_link_joint_con132"
+    type="continuous">
+    <origin
+      xyz="0.0324 -0.03 0.01"
+      rpy="0 0 0" />
+    <parent
+      link="low_base_link" />
+    <child
+      link="con132" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="con122">
+    <inertial>
+      <origin
+        xyz="-0.00856714284299187 -0.107997535307437 3.28426036366736E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.00805476428554248" />
+      <inertia
+        ixx="1.33289086438739E-05"
+        ixy="-9.9101297420375E-13"
+        ixz="-1.3362218385193E-13"
+        iyy="1.17270402667193E-07"
+        iyz="1.13821510047298E-13"
+        izz="1.33651118388553E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con122.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con122.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con112_joint_con122"
+    type="continuous">
+    <origin
+      xyz="-0.00839999999997237 -0.0138589553784069 0.00525541205117042"
+      rpy="-1.57079632679487 0.581034299531426 -1.57079632679488" />
+    <parent
+      link="con132" />
+    <child
+      link="con122" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con112">
+    <inertial>
+      <origin
+        xyz="-0.00870000000000615 -0.00713418628044951 7.68829444552921E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342057005" />
+      <inertia
+        ixx="6.42230844685496E-08"
+        ixy="-3.26223489978663E-20"
+        ixz="3.04520537936908E-23"
+        iyy="2.51851161957021E-08"
+        iyz="-4.03079217187782E-21"
+        izz="5.69218111316835E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con112.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con112.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con122_joint_con112"
+    type="continuous">
+    <origin
+      xyz="0 -0.216000000000204 0"
+      rpy="0 0 0" />
+    <parent
+      link="con122" />
+    <child
+      link="con112" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con131">
+    <inertial>
+      <origin
+        xyz="0.00840000000001212 -0.00267079063619827 0.00406731121635506"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342057005" />
+      <inertia
+        ixx="5.69218111316835E-08"
+        ixy="2.55913534575968E-21"
+        ixz="-4.05165768972689E-21"
+        iyy="5.24617679055308E-08"
+        iyz="1.79111511505682E-08"
+        izz="3.69464327587209E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con131.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con131.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="low_base_link_joint_con131"
+    type="continuous">
+    <origin
+      xyz="-0.0324 -0.03 0.01"
+      rpy="0 0 0" />
+    <parent
+      link="low_base_link" />
+    <child
+      link="con131" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="con121">
+    <inertial>
+      <origin
+        xyz="-0.0085631212348628 -0.105002630079755 3.37533001548707E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.00783743250836782" />
+      <inertia
+        ixx="1.33284062104622E-05"
+        ixy="-9.91012977906211E-13"
+        ixz="-1.33622183853349E-13"
+        iyy="1.11814968834884E-07"
+        iyz="1.13821411065065E-13"
+        izz="1.33596564050229E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con121.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.823529411764706 0.823529411764706 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con121.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con111_joint_con121"
+    type="continuous">
+    <origin
+      xyz="0.00840000000002858 -0.0138589553783162 0.00525541205111044"
+      rpy="-1.57079632679487 0.581034299531768 -1.57079632679488" />
+    <parent
+      link="con131" />
+    <child
+      link="con121" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con111">
+    <inertial>
+      <origin
+        xyz="-0.00870000000000287 -0.00713418628045612 8.32667268468867E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342057004" />
+      <inertia
+        ixx="6.42230844685494E-08"
+        ixy="-3.2563619174375E-20"
+        ixz="3.86479765632382E-23"
+        iyy="2.51851161957021E-08"
+        iyz="-4.04036098366138E-21"
+        izz="5.69218111316834E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con111.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con111.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con121_joint_con111"
+    type="continuous">
+    <origin
+      xyz="0 -0.216000000000204 0"
+      rpy="0 0 0" />
+    <parent
+      link="con121" />
+    <child
+      link="con111" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con101">
+    <inertial>
+      <origin
+        xyz="0.0323996683551134 9.10737225684466E-06 1.51706450552194E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00233438832438307" />
+      <inertia
+        ixx="1.61755929010393E-08"
+        ixy="-7.50049446821665E-21"
+        ixz="-7.13217108003041E-23"
+        iyy="5.59998517885307E-07"
+        iyz="-8.76656936053483E-11"
+        izz="5.59707976780153E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con101.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.694117647058824 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con101.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con111_joint_con101"
+    type="continuous">
+    <origin
+      xyz="-0.00870000000007759 -0.0120000000003096 -0.00839999999998997"
+      rpy="2.15183062632666 -1.5707963267949 0" />
+    <parent
+      link="con111" />
+    <child
+      link="con101" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con332">
+    <inertial>
+      <origin
+        xyz="0.00840000000046259 0.00267079063726877 0.00406731121297532"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342067129" />
+      <inertia
+        ixx="5.69218111181885E-08"
+        ixy="-8.49993187032841E-19"
+        ixz="-2.07046055382069E-18"
+        iyy="5.24617679022528E-08"
+        iyz="-1.79111511491861E-08"
+        izz="3.69464327534322E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con332.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con332.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="low_base_link_joint_con332"
+    type="continuous">
+    <origin
+      xyz="-0.0421807621135062 -0.0130592230826123 0.01"
+      rpy="0 0 1.04719755119639" />
+    <parent
+      link="low_base_link" />
+    <child
+      link="con332" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="con322">
+    <inertial>
+      <origin
+        xyz="-0.00856714294357019 0.0326254931147071 -0.102951660051571"
+        rpy="0 0 0" />
+      <mass
+        value="0.00805476456729217" />
+      <inertia
+        ixx="1.33289086556344E-05"
+        ixy="4.27371227277366E-13"
+        ixz="-9.05570669833969E-13"
+        iyy="1.21560970662347E-05"
+        iyz="3.81511722623267E-06"
+        izz="1.32628519314814E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con322.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con322.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con312_joint_con322"
+    type="continuous">
+    <origin
+      xyz="0.00840000000000435 0.0138589553783929 0.00525541205120317"
+      rpy="2.83470328626977 0.581034299531492 1.57079632679489" />
+    <parent
+      link="con332" />
+    <child
+      link="con322" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con312">
+    <inertial>
+      <origin
+        xyz="-0.00870000000259447 0.0021552006166522 -0.00680086202025776"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342067126" />
+      <inertia
+        ixx="6.42230844633969E-08"
+        ixy="8.57133442919032E-19"
+        ixz="-1.29537228388355E-18"
+        iyy="5.40254799860223E-08"
+        iyz="9.13954285064507E-09"
+        izz="2.80814473244528E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con312.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con312.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con322_joint_con312"
+    type="continuous">
+    <origin
+      xyz="0 0.0652524779703188 -0.205908023444501"
+      rpy="0 0 0" />
+    <parent
+      link="con322" />
+    <child
+      link="con312" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con331">
+    <inertial>
+      <origin
+        xyz="0.00839999999969115 0.00267079063720987 -0.00406731121301357"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342067128" />
+      <inertia
+        ixx="5.69218111181885E-08"
+        ixy="8.49976159829528E-19"
+        ixz="-2.07046275322281E-18"
+        iyy="5.24617679022527E-08"
+        iyz="1.79111511491861E-08"
+        izz="3.69464327534321E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con331.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con331.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="low_base_link_joint_con331"
+    type="continuous">
+    <origin
+      xyz="-0.00978076211349385 0.0430592230826123 0.01"
+      rpy="-3.14159265358979 0 -2.09439510239319" />
+    <parent
+      link="low_base_link" />
+    <child
+      link="con331" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="con321">
+    <inertial>
+      <origin
+        xyz="-0.00856714294364674 0.0326254931146427 -0.102951660051591"
+        rpy="0 0 0" />
+      <mass
+        value="0.00805476456729217" />
+      <inertia
+        ixx="1.33289086556346E-05"
+        ixy="4.27371226470038E-13"
+        ixz="-9.05570664973456E-13"
+        iyy="1.21560970662327E-05"
+        iyz="3.81511722623569E-06"
+        izz="1.32628519315026E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con321.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.694117647058824 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con321.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con311_joint_con321"
+    type="continuous">
+    <origin
+      xyz="0.00840000000005628 0.0138589553783993 -0.00525541205120128"
+      rpy="-0.306889367319877 -0.581034299531492 1.5707963267949" />
+    <parent
+      link="con331" />
+    <child
+      link="con321" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con311">
+    <inertial>
+      <origin
+        xyz="-0.00870000000267096 0.00215520061655494 -0.00680086202028626"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342067126" />
+      <inertia
+        ixx="6.42230844633967E-08"
+        ixy="8.57143989471842E-19"
+        ixz="-1.29534002383966E-18"
+        iyy="5.40254799860247E-08"
+        iyz="9.13954285064141E-09"
+        izz="2.808144732445E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con311.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con311.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con321_joint_311"
+    type="continuous">
+    <origin
+      xyz="0 0.0652524779703756 -0.205908023444483"
+      rpy="0 0 0" />
+    <parent
+      link="con321" />
+    <child
+      link="con311" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con301">
+    <inertial>
+      <origin
+        xyz="0.0323996683551134 -9.10737225690017E-06 -1.51706450561354E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00233438832438308" />
+      <inertia
+        ixx="1.61755929010393E-08"
+        ixy="-4.07391035840149E-22"
+        ixz="4.17053126979029E-23"
+        iyy="5.59998517885309E-07"
+        iyz="-8.76656936052873E-11"
+        izz="5.59707976780154E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con301.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.694117647058824 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con301.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con311_joint_con301"
+    type="continuous">
+    <origin
+      xyz="-0.0087000000000404 0.0116326719101132 -0.00890173827044613"
+      rpy="-0.581034299531494 0.306889367319877 -1.5707963267949" />
+    <parent
+      link="con311" />
+    <child
+      link="con301" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con232">
+    <inertial>
+      <origin
+        xyz="-0.00839999999974417 0.00267079063722375 -0.00406731121300319"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342067125" />
+      <inertia
+        ixx="5.69218111181876E-08"
+        ixy="-8.55178680459424E-19"
+        ixz="2.07810549694647E-18"
+        iyy="5.24617679022519E-08"
+        iyz="1.7911151149186E-08"
+        izz="3.69464327534315E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con232.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con232.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="low_base_link_joint_con232"
+    type="continuous">
+    <origin
+      xyz="0.00978076211349385 0.0430592230826123 0.01"
+      rpy="3.14159265358979 0 2.09439510239343" />
+    <parent
+      link="low_base_link" />
+    <child
+      link="con232" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="con222">
+    <inertial>
+      <origin
+        xyz="-0.00856714268518971 0.0326254957216903 0.102951664326077"
+        rpy="0 0 0" />
+      <mass
+        value="0.0080547646073452" />
+      <inertia
+        ixx="1.33289086556958E-05"
+        ixy="1.72632659322743E-13"
+        ixz="9.86336946460541E-13"
+        iyy="1.21560969352813E-05"
+        iyz="-3.81511741222842E-06"
+        izz="1.32628532431947E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con222.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.694117647058824 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con222.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con212_joint_con222"
+    type="continuous">
+    <origin
+      xyz="-0.00840000000001401 0.013858955378404 -0.00525541205118865"
+      rpy="-2.83470328626975 -0.581034299531493 1.57079632679489" />
+    <parent
+      link="con232" />
+    <child
+      link="con222" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con212">
+    <inertial>
+      <origin
+        xyz="-0.0087000000026722 0.00215520061653986 0.0068008620202884"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342067128" />
+      <inertia
+        ixx="6.42230844633973E-08"
+        ixy="8.57310873160425E-19"
+        ixz="1.29526805912637E-18"
+        iyy="5.40254799860277E-08"
+        iyz="-9.13954285063808E-09"
+        izz="2.8081447324448E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con212.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con212.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con222_joint_con212"
+    type="continuous">
+    <origin
+      xyz="0 0.0652524779703352 0.205908023444506"
+      rpy="0 0 0" />
+    <parent
+      link="con222" />
+    <child
+      link="con212" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con231">
+    <inertial>
+      <origin
+        xyz="-0.00840000000029001 0.00267079063721867 0.00406731121300269"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342067125" />
+      <inertia
+        ixx="5.69218111181877E-08"
+        ixy="8.54295593032516E-19"
+        ixz="2.07454581522584E-18"
+        iyy="5.24617679022521E-08"
+        iyz="-1.79111511491859E-08"
+        izz="3.69464327534314E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con231.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con231.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="low_base_link_joint_con231"
+    type="continuous">
+    <origin
+      xyz="0.0421807621135062 -0.0130592230826123 0.01"
+      rpy="0 0 -1.04719755119638" />
+    <parent
+      link="low_base_link" />
+    <child
+      link="con231" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="con221">
+    <inertial>
+      <origin
+        xyz="-0.00856714268519068 0.0326254957216935 0.102951664326072"
+        rpy="0 0 0" />
+      <mass
+        value="0.00805476460734519" />
+      <inertia
+        ixx="1.33289086556959E-05"
+        ixy="1.72632660441091E-13"
+        ixz="9.86336945014629E-13"
+        iyy="1.2156096935281E-05"
+        iyz="-3.81511741222883E-06"
+        izz="1.32628532431976E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con221.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.694117647058824 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con221.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con211_joint_con221"
+    type="continuous">
+    <origin
+      xyz="-0.00839999999997281 0.0138589553783976 0.00525541205118435"
+      rpy="0.306889367319898 0.581034299531491 1.5707963267947" />
+    <parent
+      link="con231" />
+    <child
+      link="con221" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con211">
+    <inertial>
+      <origin
+        xyz="-0.00870000000266553 0.00215520061655639 0.00680086202029717"
+        rpy="0 0 0" />
+      <mass
+        value="0.00144663342067128" />
+      <inertia
+        ixx="6.42230844633973E-08"
+        ixy="8.57311286750731E-19"
+        ixz="1.29525316987535E-18"
+        iyy="5.40254799860304E-08"
+        iyz="-9.13954285063433E-09"
+        izz="2.80814473244455E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con211.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.701960784313725 0.701960784313725 0.0235294117647059 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con211.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con221_joint_con211"
+    type="continuous">
+    <origin
+      xyz="0 0.0652524779703401 0.205908023444494"
+      rpy="0 0 0" />
+    <parent
+      link="con221" />
+    <child
+      link="con211" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="con201">
+    <inertial>
+      <origin
+        xyz="0.0323996683551134 -9.10737227372005E-06 -1.5170645076501E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00233438832438308" />
+      <inertia
+        ixx="1.61755929010392E-08"
+        ixy="4.73579532941084E-22"
+        ixz="-4.56894687325784E-22"
+        iyy="5.59998517885307E-07"
+        iyz="-8.76656936052657E-11"
+        izz="5.59707976780153E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con201.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.694117647058824 0.890196078431372 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DeltaManipulator_low/meshes/con201.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="con211_joint_con201"
+    type="continuous">
+    <origin
+      xyz="-0.00869999999988946 -0.00438239658005455 0.0139769310012936"
+      rpy="2.5605583540583 0.306889367319895 1.5707963267949" />
+    <parent
+      link="con211" />
+    <child
+      link="con201" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+</robot>

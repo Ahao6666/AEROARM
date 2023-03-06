@@ -6,7 +6,7 @@
     </include>
     <include>
       <uri>model://FlyingDeltaArmBase</uri>
-      <pose>0 0 1.503 0 0 0</pose>
+      <pose>0 0 1.503 0 0 -1.5708</pose>
     </include>
     <include>
       <uri>model://velodyne_VLP_16</uri>
@@ -20,10 +20,75 @@
       <parent>FlyingDelta::base_link</parent>
       <child>velodyne_VLP_16::velodyne</child>
     </joint>
+
     <include>
-      <uri>model://FlyingDeltaArmLow_test</uri><!-- there are other "FlyingDeltaArmLow_test" need to be changed-->
-      <pose>0 0 1.7265 0 0 0.5236</pose>
+      <uri>model://gripper1</uri>
+      <pose>-0.0 -0.0 1.18 1.5708 0 0</pose>
     </include>
+    <joint name="marker_fixed" type="fixed">
+      <parent>DeltaManipulator_low::low_base_link</parent>
+      <child>gripper1::base_link</child>
+    </joint>
+
+    <include>
+      <uri>model://DeltaManipulator_low</uri>
+      <pose>0.0 -0.0 1.17 0 0 -1.5708</pose>	  
+    </include>
+    <joint name='uleg1_con' type='revolute'>
+      <child>DeltaManipulator_low::con101</child>
+      <parent>FlyingDeltaArmBase::uleg_1</parent>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-1</lower>
+          <upper>1</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0.00</damping>
+	  <friction>0.00</friction>
+        </dynamics>
+        <use_parent_model_frame>0</use_parent_model_frame>
+      </axis>
+    </joint>
+   <joint name='uleg3_con' type='revolute'>
+      <child>DeltaManipulator_low::con201</child>
+      <parent>FlyingDeltaArmBase::uleg_3</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1</lower>
+          <upper>1</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0.00</damping>
+	  <friction>0.00</friction>
+        </dynamics>
+        <use_parent_model_frame>0</use_parent_model_frame>
+      </axis>
+    </joint>
+   <joint name='uleg2_con' type='revolute'>
+      <child>DeltaManipulator_low::con301</child>
+      <parent>FlyingDeltaArmBase::uleg_2</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1</lower>
+          <upper>1</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0.00</damping>
+	  <friction>0.00</friction>
+        </dynamics>
+        <use_parent_model_frame>0</use_parent_model_frame>
+      </axis>
+    </joint>
+
 <!--
     <include>
       <uri>model://depth_camera</uri>
@@ -49,64 +114,11 @@
       <child>FlyingDelta::base_link</child>
       <parent>FlyingDeltaArmBase::link_0</parent>
     </joint>
-    <joint name='uleg1_con' type='revolute'>
-      <child>FlyingDeltaArmLow_test::con1</child>
-      <parent>FlyingDeltaArmBase::uleg_3</parent>
-      <axis>
-        <xyz>-0.5 0.8660254 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-          <damping>0.00</damping>
-	  <friction>0.00</friction>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-   <joint name='uleg2_con' type='revolute'>
-      <child>FlyingDeltaArmLow_test::con2</child>
-      <parent>FlyingDeltaArmBase::uleg_1</parent>
-      <axis>
-        <xyz>1 0 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-          <damping>0.00</damping>
-	  <friction>0.00</friction>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-   <joint name='uleg3_con' type='revolute'>
-      <child>FlyingDeltaArmLow_test::con3</child>
-      <parent>FlyingDeltaArmBase::uleg_2</parent>
-      <axis>
-        <xyz>0.5 0.8660254 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-          <damping>0.00</damping>
-	  <friction>0.00</friction>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
+
    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
     <alwaysOn>true</alwaysOn>
     <updateRate>100.0</updateRate>
-    <bodyName>FlyingDeltaArmLow_test::low_base</bodyName>
+    <bodyName>DeltaManipulator_low::low_base_link</bodyName>
     <topicName>ground_truth/relative_pos</topicName>
     <gaussianNoise>0.00</gaussianNoise>
     <frameName>FlyingDelta::base_link</frameName>
@@ -116,7 +128,7 @@
   <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
     <alwaysOn>true</alwaysOn>
     <updateRate>100.0</updateRate>
-    <bodyName>FlyingDeltaArmLow_test::low_base</bodyName>
+    <bodyName>DeltaManipulator_low::low_base_link</bodyName>
     <topicName>ground_truth/position_end_effc</topicName>
     <gaussianNoise>0.00</gaussianNoise>
     <frameName>world</frameName>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="delta_test">
+    <link name='delta_test'>
+      <inertial>
+        <pose>0 -0 0.009282 0 -0 0</pose>
+        <mass>0.0277053</mass>
+        <inertia>
+          <ixx>7.21837e-06</ixx>
+          <ixy>8.45348e-15</ixy>
+          <ixz>4.72158e-13</ixz>
+          <iyy>7.21837e-06</iyy>
+          <iyz>2.82195e-12</iyz>
+          <izz>1.36261e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='delta_test_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta_test/meshes/con101.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='delta_test_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://delta_test/meshes/con101.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
