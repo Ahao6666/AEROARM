@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<sdf version='1.7'>
+<sdf version='1.5'>
   <world name='default'>
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
@@ -527,7 +527,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bookshelf_large_clone_0_clone_1'>
+      <model name='bookshelf_large_2'>
         <pose>-3.66687 -2.42144 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
@@ -543,7 +543,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bookshelf_large_clone_0_clone_1_clone'>
+      <model name='bookshelf_large_3'>
         <pose>-3.6687 -0.749939 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
@@ -559,7 +559,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bookshelf_large_clone_0_clone_1_clone_0'>
+      <model name='bookshelf_large_4'>
         <pose>-3.66663 0.931192 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
@@ -575,7 +575,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bookshelf_large_clone_0_clone_1_clone_1'>
+      <model name='bookshelf_large_6'>
         <pose>-3.66341 2.60948 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
@@ -591,7 +591,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bookshelf_large_clone_0_clone_1_clone_1_clone'>
+      <model name='bookshelf_large_7'>
         <pose>-3.08066 4.70612 0 0 -0 4e-06</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
@@ -607,7 +607,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bookshelf_large_clone_0_clone_1_clone_1_clone_clone'>
+      <model name='bookshelf_large_10'>
         <pose>-1.41001 4.70381 0 0 -0 4e-06</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
@@ -623,7 +623,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bookshelf_large_clone_0_clone_1_clone_1_clone_clone_0'>
+      <model name='bookshelf_large_8'>
         <pose>0.256207 4.70178 0 0 -0 4e-06</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
@@ -639,7 +639,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bookshelf_large_clone_0_clone_1_clone_1_clone_clone_1'>
+      <model name='bookshelf_large_9'>
         <pose>1.92867 4.70359 0 0 -0 4e-06</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
@@ -655,7 +655,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='bookshelf_large_clone_0_clone_1_clone_2'>
+      <model name='bookshelf_large_5'>
         <pose>-3.66883 -4.0911 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
@@ -713,7 +713,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='drawer_white_clone'>
+      <model name='drawer_white_2'>
         <pose>1.76732 -4.82747 0.020462 0 0 -0.017089</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -729,7 +729,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='drawer_white_clone_0'>
+      <model name='drawer_white_3'>
         <pose>0.654188 -4.81524 0.020462 0 0 -0.017089</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -745,7 +745,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='drawer_white_clone_clone'>
+      <model name='drawer_white_4'>
         <pose>2.3305 -4.83079 0.020462 0 0 -0.017089</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -1262,7 +1262,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>0.316179 -3.00013 0 0 -0 0</pose>
     </model>
-    <model name='drawer_white_clone'>
+    <model name='drawer_white_2'>
       <link name='link_0'>
         <pose>-0.004287 -0.020202 0 0 -0 0</pose>
         <visual name='visual'>
@@ -1364,7 +1364,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-0.816379 -4.15734 0.020462 0 0 -0.017089</pose>
     </model>
-    <model name='drawer_white_clone_0'>
+    <model name='drawer_white_3'>
       <link name='link_0'>
         <pose>-0.004287 -0.020202 0 0 -0 0</pose>
         <visual name='visual'>
@@ -1466,7 +1466,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>0.129137 -3.52552 0.020462 0 0 -0.017089</pose>
     </model>
-    <model name='drawer_white_clone_clone'>
+    <model name='drawer_white_4'>
       <link name='link_0'>
         <pose>-0.004287 -0.020202 0 0 -0 0</pose>
         <visual name='visual'>
@@ -2552,7 +2552,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-1.4947 -2.09449 0 0 -0 0</pose>
     </model>
-    <model name='bookshelf_large_clone_0_clone_1'>
+    <model name='bookshelf_large_2'>
       <link name='link_1'>
         <pose>-0.000121 -2.1e-05 0 0 -0 0</pose>
         <self_collide>0</self_collide>
@@ -2602,7 +2602,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/frame.dae</uri>
+              <uri>model://bookshelf_large/meshes/frame.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2687,7 +2687,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/glass.dae</uri>
+              <uri>model://bookshelf_large/meshes/glass.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2742,7 +2742,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-2.77508 -2.31133 0 0 -0 1.5708</pose>
     </model>
-    <model name='bookshelf_large_clone_0_clone_1_clone'>
+    <model name='bookshelf_large_3'>
       <link name='link_1'>
         <pose>-0.000121 -2.1e-05 0 0 -0 0</pose>
         <self_collide>0</self_collide>
@@ -2792,7 +2792,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/frame.dae</uri>
+              <uri>model://bookshelf_large/meshes/frame.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2877,7 +2877,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/glass.dae</uri>
+              <uri>model://bookshelf_large/meshes/glass.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2932,7 +2932,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-3.116 -0.813456 0 0 -0 1.5708</pose>
     </model>
-    <model name='bookshelf_large_clone_0_clone_1_clone_0'>
+    <model name='bookshelf_large_4'>
       <link name='link_1'>
         <pose>-0.000121 -2.1e-05 0 0 -0 0</pose>
         <self_collide>0</self_collide>
@@ -2982,7 +2982,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/frame.dae</uri>
+              <uri>model://bookshelf_large/meshes/frame.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3067,7 +3067,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/glass.dae</uri>
+              <uri>model://bookshelf_large/meshes/glass.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3122,7 +3122,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-2.35644 1.30649 0 0 -0 1.5708</pose>
     </model>
-    <model name='bookshelf_large_clone_0_clone_1_clone_1'>
+    <model name='bookshelf_large_6'>
       <link name='link_1'>
         <pose>-0.000121 -2.1e-05 0 0 -0 0</pose>
         <self_collide>0</self_collide>
@@ -3172,7 +3172,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/frame.dae</uri>
+              <uri>model://bookshelf_large/meshes/frame.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3257,7 +3257,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/glass.dae</uri>
+              <uri>model://bookshelf_large/meshes/glass.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3312,7 +3312,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-2.22606 3.20216 0 0 -0 1.5708</pose>
     </model>
-    <model name='bookshelf_large_clone_0_clone_1_clone_2'>
+    <model name='bookshelf_large_5'>
       <link name='link_1'>
         <pose>-0.000121 -2.1e-05 0 0 -0 0</pose>
         <self_collide>0</self_collide>
@@ -3362,7 +3362,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/frame.dae</uri>
+              <uri>model://bookshelf_large/meshes/frame.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3447,7 +3447,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/glass.dae</uri>
+              <uri>model://bookshelf_large/meshes/glass.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3502,7 +3502,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-2.55567 -3.43102 0 0 -0 1.5708</pose>
     </model>
-    <model name='bookshelf_large_clone_0_clone_1_clone_1_clone'>
+    <model name='bookshelf_large_7'>
       <link name='link_1'>
         <pose>-0.000121 -2.1e-05 0 0 -0 0</pose>
         <self_collide>0</self_collide>
@@ -3552,7 +3552,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/frame.dae</uri>
+              <uri>model://bookshelf_large/meshes/frame.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3637,7 +3637,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/glass.dae</uri>
+              <uri>model://bookshelf_large/meshes/glass.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3692,7 +3692,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-1.06215 2.8742 0 0 -0 1.5708</pose>
     </model>
-    <model name='bookshelf_large_clone_0_clone_1_clone_1_clone_clone'>
+    <model name='bookshelf_large_10'>
       <link name='link_1'>
         <pose>-0.000121 -2.1e-05 0 0 -0 0</pose>
         <self_collide>0</self_collide>
@@ -3742,7 +3742,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/frame.dae</uri>
+              <uri>model://bookshelf_large/meshes/frame.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3827,7 +3827,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/glass.dae</uri>
+              <uri>model://bookshelf_large/meshes/glass.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3882,7 +3882,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-0.642577 3.64835 0 0 -0 4e-06</pose>
     </model>
-    <model name='bookshelf_large_clone_0_clone_1_clone_1_clone_clone_0'>
+    <model name='bookshelf_large_8'>
       <link name='link_1'>
         <pose>-0.000121 -2.1e-05 0 0 -0 0</pose>
         <self_collide>0</self_collide>
@@ -3932,7 +3932,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/frame.dae</uri>
+              <uri>model://bookshelf_large/meshes/frame.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4017,7 +4017,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/glass.dae</uri>
+              <uri>model://bookshelf_large/meshes/glass.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4072,7 +4072,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>0.372529 2.24806 0 0 -0 4e-06</pose>
     </model>
-    <model name='bookshelf_large_clone_0_clone_1_clone_1_clone_clone_1'>
+    <model name='bookshelf_large_9'>
       <link name='link_1'>
         <pose>-0.000121 -2.1e-05 0 0 -0 0</pose>
         <self_collide>0</self_collide>
@@ -4122,7 +4122,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/frame.dae</uri>
+              <uri>model://bookshelf_large/meshes/frame.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4207,7 +4207,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/.gazebo/models/bookshelf_large/meshes/glass.dae</uri>
+              <uri>model://bookshelf_large/meshes/glass.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4311,7 +4311,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/PX4-Autopilot/Tools/sitl_gazebo/models/screen/meshes/base_link.STL</uri>
+              <uri>model://screen/meshes/base_link.STL</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4415,7 +4415,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/PX4-Autopilot/Tools/sitl_gazebo/models/screen/meshes/base_link.STL</uri>
+              <uri>model://screen/meshes/base_link.STL</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4519,7 +4519,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/PX4-Autopilot/Tools/sitl_gazebo/models/screen/meshes/base_link.STL</uri>
+              <uri>model://screen/meshes/base_link.STL</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4623,7 +4623,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/PX4-Autopilot/Tools/sitl_gazebo/models/screen/meshes/base_link.STL</uri>
+              <uri>model://screen/meshes/base_link.STL</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4727,7 +4727,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/PX4-Autopilot/Tools/sitl_gazebo/models/screen/meshes/base_link.STL</uri>
+              <uri>model://screen/meshes/base_link.STL</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -4831,7 +4831,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/ahao/PX4-Autopilot/Tools/sitl_gazebo/models/screen/meshes/base_link.STL</uri>
+              <uri>model://screen/meshes/base_link.STL</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
