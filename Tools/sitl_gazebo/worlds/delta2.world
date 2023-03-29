@@ -4572,12 +4572,12 @@
           <pose>0 0 0 0 -0 0</pose>
           <mass>0.005</mass>
           <inertia>
-            <ixx>2.67e-05</ixx>
+            <ixx>2.67e-03</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>2.67e-05</iyy>
+            <iyy>2.67e-03</iyy>
             <iyz>0</iyz>
-            <izz>2.67e-05</izz>
+            <izz>2.67e-03</izz>
           </inertia>
         </inertial>
         <collision name='m_collision'>

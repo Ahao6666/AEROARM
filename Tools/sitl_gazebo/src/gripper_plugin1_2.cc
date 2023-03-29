@@ -97,16 +97,7 @@ namespace gazebo
 
   			// Store the model pointer for convenience.
   			this->model = _model;
-
-//  			// Get the first joint. We are making an assumption about the model
-//  			// having one joint that is the rotational joint.
-//  			this->joint = _model->GetJoints()[7];
-//			std::cerr << "\nThe manipulator plugin is attach to model[" <<
-//        		this->joint->GetScopedName() << "]\n";
-//  			this->joint = _model->GetJoints()[6];
-//			std::cerr << "\nThe manipulator plugin is attach to model[" <<
-//        		this->joint->GetScopedName() << "]\n";
-  			this->joint = _model->GetJoints()[13];	//15 for another gripper1
+  			this->joint = _model->GetJoints()[13];
 			std::cerr << "\nThe gripper1 ROS plugin 2 is attach to joint[" <<
         		this->joint->GetName() << "]\n";
 
